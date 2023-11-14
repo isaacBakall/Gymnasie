@@ -149,7 +149,7 @@ html, body {
     font-family: 'Times New Roman', Times, serif;
     
 }
-.textJan {
+.textJan,.textPachelbel,.textAlbinoni,.textVivaldi {
     font-size: 25px;
     text-align: center;
     place-self: center;
@@ -157,6 +157,9 @@ html, body {
     color: white;
     font-family: 'Times New Roman', Times, serif;
 }
+
+
+
 .soundJan {
     margin-top: 100px;
 }
