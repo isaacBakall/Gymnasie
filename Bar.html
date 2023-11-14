@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Klassisk musik</title>
+    
+
+</head>
+<body>
+    <div class="background">
+    <section class="grid-time">
+        <div class="leftColumn">
+            <div class="JanPietersText">
+                <div class="tom"></div>
+                <div class="textJan" style="display: none">Jan Pieters Sweelinck (1562-1621) räknas vara den som inledde epoken och vid Georg Friedrich Händel (1685-1759) död tog musikepoken slut.<!--Jan Pierters Text --></div>
+                <div><audio class="soundJan" controls style="display: none">
+                    <source src="./sound/Vivaldi - Spring.mp3" type="audio/mpeg">
+                  </audio>
+                </div>
+            </div>
+            
+            <div class="tomVänster"></div>
+            
+            <div class="Johann_Pachelbel">
+                <div class="tom"></div>
+                <div class="textName">Johann Pachelbel</div> <!--Johann Pachelbel Namn-->
+                <div class="bildJoh"></div>                  <!--Johann Pachelbel Bild-->
+            </div>
+            
+        </div>
+
+        <div class="timeline">
+            <div class="line"></div>
+          </div>
+          
+
+        <div class="rightColumn">
+            <div class="JanPietersBild"> 
+                <div class="bildJan" id="bildJanButton"></div>    <!--Jan Pierters Bild-->
+                <div class="textName">Jan Pieters Sweelinck</div> <!--Jan Pierters Namn-->
+                <div class="tom"></div>
+            </div>
+            
+            <div class="streckJan">
+                <div><p class="streckV">____________________________</p><p class="årtalV">1562-1621</p></div> <!--Jan Pierters Namn-->
+            </div>
+
+            <div class="JohannPachelbelText">
+                <div class="tom"></div>
+                <div class="tom"></div>
+                <div class="tom"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+            
+
+    <section class="grid2">
+        <div class="leftColumn2">
+            
+            <div class="Johann_Pachelbel_streck">
+                <div><p class="årtalH">1562-1621</p><p class="streckH">____________________________</p></div> <!--Johann Pachelbel streck-->
+            </div>
+            
+            <div class="TomasoAlbinoniText">
+                <div class="tom"></div>
+                <div class="tom"></div>
+                <div class="tom"></div> 
+            </div>
+
+            <div class="tomVänster"></div>
+            
+        </div>
+
+        <div class="timeline">
+            <div class="line"></div>
+          </div>
+          
+
+        <div class="rightColumn2">
+            <div class="tomHöger"></div>
+
+            <div class="TomasoAlbinoniBild">
+                <div class="bildtomaso" id="bildJanButton"></div> <!--Tomaso Albinoni Bild-->
+                <div class="textName">Tomaso Albinoni</div> <!--Tomaso Albinoni Namn-->
+                <div class="tom"></div> <!--Tomaso Albinoni Streck-->
+
+            </div>
+            <div class="TomasoAlbinoniStreck">
+                <div><p class="streckV">____________________________</p><p class="årtalV">1671-1750</p></div> <!--Tomaso Albinoni Streck-->
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="grid3">
+        <div class="leftColumn3">
+            <div class="Vivaldibild">
+                    <div class="tom"></div> 
+                    <div class="textName">Antonio Vivaldi</div> <!--Antonio Vivaldi Namn-->
+                    <div class="bildViv"></div>                 <!--Antonio Vivaldi Bild-->
+            </div>
+            
+            <div class="Johann_Pachelbel_streck">
+                <div><p class="årtalH">1678-1741</p><p class="streckH">____________________________</p></div> <!--Johann Pachelbel streck-->
+            </div>
+
+            <div class="bachoHändelText">
+                <div class="tom"></div>
+                <div class="bildBar"></div>
+                <div class="tom"></div>
+            </div>
+            
+        </div>
+
+        <div class="timeline">
+            <div class="line"></div>
+          </div>
+          
+
+        <div class="rightColumn3">
+            <div class="AntioVivaldiText">
+                <div class="tom"></div>
+                <div class="bildRen"></div>
+                <div class="tom"></div>
+            </div>
+
+            <div class="bachoHändelText">
+                <div class="textName">Johann Sebastian Bach </div> <!--Johann Sebastian Bach Namn-->
+                <div class="tomt"></div>
+                <div class="textName">Georg Friedrich Händel</div> <!--Georg Friedrich Händel Namn-->
+            </div>
+
+            <div class="bachoHändelBild">
+                <div class="bildBach"></div>
+                <div class="streckB"></div>
+                <div class="bildHänd"></div>
+            </div>
+        </div>
+        
+    </section>
+    
+
+    <script>
+        document.getElementById('bildJanButton').addEventListener('click', function() {
+    var textJan = document.querySelector('.textJan');
+
+    if (textJan.style.display === 'none') {
+        textJan.style.display = 'block';
+    } else {
+        textJan.style.display = 'none';
+    }
+    });
+
+
+    document.getElementById('bildJanButton').addEventListener('click', function() {
+        var elementsToToggle = document.querySelectorAll('.soundJan');
+
+        elementsToToggle.forEach(function(element) {
+            if (element.style.display === 'none' || element.style.display === '') {
+                element.style.display = 'block';
+            } else {
+                element.style.display = 'none';
+            }
+        });
+    });
+    </script>
+    </div>
+</body>
+</html>
+

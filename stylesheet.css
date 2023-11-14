@@ -1,0 +1,473 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-time {
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    grid-gap: 0;
+    margin: 0;
+}
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    grid-gap: 0;
+    margin: 0;
+}
+.grid3 {
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    grid-gap: 0;
+    margin: 0;
+}
+
+
+.leftColumn, .rightColumn {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 0;
+    max-height: 100vh;
+}
+.leftColumn2, .rightColumn2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 0;
+    max-height: 100vh
+}
+
+.leftColumn3, .rightColumn3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 0;
+    max-height: 100vh
+}
+
+
+.epok9, .epok10, .JanPietersText, .JanPietersBild, .Johann_Pachelbel, .JohannPachelbelText, .TomasoAlbinoniBild, .TomasoAlbinonitext, .Vivaldibild, .AntioVivaldiText, .bachohändel, .bachoHändelText, .bachoHändelBild
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+}
+.bildJan, .bildJoh, .bildtomaso, .bildViv, .bildBach, .bildHänd {
+    background-size: cover;
+    width: 90%;
+    height: 90%;
+    background-repeat: no-repeat;
+    background-position: center top right;
+    cursor: pointer;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-top: 5%;
+    margin-left: 5%;
+    overflow: hidden;
+} 
+
+.bildBach, .bildHänd{
+    margin-top: -3rem;
+}
+.bildJan:hover, .bildJoh:hover, .bildtomaso:hover, .bildViv:hover, .bildBach:hover, .bildHänd:hover {
+    transition: 0.5s ease;
+    transform: scale(1.10);
+    border: 5px solid white;
+} 
+
+.bildJan {
+    background-image: url('./img/jan.png'); 
+}
+.bildJoh{
+    background-image: url('./img/Johann_Pachelbel.png');
+}
+.bildtomaso{
+    background-image: url('./img/tomaso_albinoni.png');  
+}
+.bildViv{
+    background-image: url('./img/vivaldi.png');
+}
+.bildBach{
+    background-image: url('./img/bach.png');
+    background-position: 40% center;
+}
+.bildHänd{
+    background-image: url('./img/händ.png');
+}
+
+
+
+
+
+
+
+
+.bildRen:hover, .bildBar:hover {
+    transition: 0.5s ease;
+    opacity: 0.5;
+}
+
+.timeline {
+    background-color: rgb(82, 82, 83);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .line{
+    width: 2px;
+    height: 100%;
+    background-color: #f6f7f7;
+    
+  }
+
+  .background {
+    --s: 50px;
+    --c: #191b22;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%,#20222a 68% 70%,#0000 72%;
+    background: 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+        repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+        radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+    background-attachment: fixed;
+}
+
+
+.textName {
+    font-size: 50px;
+    text-align: center;
+    place-self: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.textJan {
+    font-size: 25px;
+    text-align: center;
+    place-self: center;
+    font-weight: bold;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.soundJan {
+    margin-top: 100px;
+}
+
+
+.streckV{
+    font-size: 40px;
+    text-align: left;
+    font-weight: bold;
+    
+    color: white;
+    margin-left: -50px;
+    margin-top: -40px;
+    overflow: hidden;
+}
+.streckH{
+    font-size: 40px;
+    text-align: left;
+    font-weight: bold;
+    
+    color: white;
+    margin-left: 283px;
+    margin-top: -40px;
+    position: absolute;
+    overflow: hidden;
+}
+.streckB{
+    font-size: 40px;
+    text-align: left;
+    font-weight: bold;
+    color: white;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 12.5rem;
+    margin-left: -50px;
+    
+}
+
+.årtalV{
+    color: white;
+    margin-top: -80px ;
+    font-size: 30px;
+    margin-left: 380px;
+}
+.årtalH{
+    color: white;
+    font-size: 30px;
+    margin-left: 283px;
+    margin-top: -40px;
+    position: absolute;
+    
+}
+.årtal{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 65px;
+}
+.årtal2{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 333px;
+}
+
+
+
+/*--------------------------------*/
+
+.main {
+    --u: 20px;
+    --c1: #a29478;
+    --c2: #616c7f;
+    --c3: #414c66;
+    --gp: 50%/ calc(var(--u) * 10) calc(var(--u) * 7.8);
+    --dg: 0 25%, #fff0 0 100%;
+    --dr: from 45deg at;
+    --dl: from -135deg at;
+    --du: from -45deg at 50%;
+    --dd: from 135deg at 50%;
+    background: 
+        /*right*/
+        conic-gradient(var(--dr) 86% 62%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--dr) 76% 62%, var(--c3) var(--dg)) var(--gp),
+        conic-gradient(var(--dr) 74.5% 62%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--dr) 65% 62%, var(--c2) var(--dg)) var(--gp),
+        conic-gradient(var(--dr) 63.5% 62%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--dr) 56% 62%, var(--c3) var(--dg)) var(--gp),
+        conic-gradient(var(--dr) 54.5% 62%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--dr) 50% 62%, var(--c2) var(--dg)) var(--gp),
+        /*left*/
+        conic-gradient(var(--dl) 14% 62%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--dl) 24% 62%, var(--c3) var(--dg)) var(--gp),
+        conic-gradient(var(--dl) 25.5% 62%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--dl) 35% 62%, var(--c2) var(--dg)) var(--gp),
+        conic-gradient(var(--dl) 36.5% 62%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--dl) 44% 62%, var(--c3) var(--dg)) var(--gp),
+        conic-gradient(var(--dl) 45.5% 62%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--dl) 50% 62%, var(--c2) var(--dg)) var(--gp),
+        /*up*/
+        conic-gradient(var(--du) 19%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--du) 31%, var(--c3) var(--dg)) var(--gp),
+        conic-gradient(var(--du) 33%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--du) 43.5%, var(--c2) var(--dg)) var(--gp),
+        conic-gradient(var(--du) 45.5%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--du) 55%, var(--c3) var(--dg)) var(--gp),
+        conic-gradient(var(--du) 57%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--du) 66%, var(--c2) var(--dg)) var(--gp),
+        /*down*/
+        conic-gradient(var(--dd) 81%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--dd) 69%, var(--c3) var(--dg)) var(--gp),
+        conic-gradient(var(--dd) 67%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--dd) 58%, var(--c2) var(--dg)) var(--gp);
+    
+}
+
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 0px;
+    }
+
+
+
+
+
+
+    
+.renässansen { 
+    grid-area: 1 / 2 / 2 / 3; 
+    position: relative;
+    overflow: hidden;}
+.renässansen img, .barocken img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.romantiken img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;  
+}
+.modernismen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    object-position: center 12%;
+}
+.wienklassicismen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    object-position: 2% 10%;
+}
+
+
+
+
+.barocken { grid-area: 1 / 3 / 2 / 4; }
+.wienklassicismen { grid-area: 1 / 4 / 2 / 5; }
+
+.parent2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 0px;
+    }
+
+.renText { 
+    grid-area: 1 / 2 / 2 / 3; 
+    background-color: rgba(30, 28, 28, 0.489);
+    color: rgb(239, 187, 92);
+    font-weight: bold;
+    margin-top: -200px;
+    z-index: 1;
+    pointer-events: none;
+    
+}
+
+
+.barText { 
+    grid-area: 1 / 3 / 2 / 4; 
+    background-color: rgba(30, 28, 28, 0.489);
+    color: rgb(239, 187, 92);
+    font-weight: bold;
+    margin-top: -200px;
+    z-index: 1;
+    pointer-events: none;}
+.wienText { 
+    grid-area: 1 / 4 / 2 / 5; 
+    background-color: rgba(30, 28, 28, 0.489);
+    color: rgb(239, 187, 92);
+    font-weight: bold;
+    margin-top: -200px;
+    z-index: 1;
+    pointer-events: none;}
+
+
+
+.parent3 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 0px;
+    }
+
+.romantiken { grid-area: 1 / 2 / 2 / 3; }
+.modernismen { grid-area: 1 / 3 / 2 / 4; }
+.kvinnor { grid-area: 1 / 4 / 2 / 5; }
+
+
+.parent4 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 0px;
+    }
+
+.romText { 
+    grid-area: 1 / 2 / 2 / 3; 
+    background-color: rgba(30, 28, 28, 0.489);
+    color: rgb(239, 187, 92);
+    font-weight: bold;
+    margin-top: -200px;
+    z-index: 1;
+    pointer-events: none;}
+.modText { 
+    grid-area: 1 / 3 / 2 / 4; 
+    background-color: rgba(30, 28, 28, 0.489);
+    color: rgb(239, 187, 92);
+    font-weight: bold;
+    margin-top: -200px;
+    z-index: 1;
+    pointer-events: none;}
+.kvinnorText { 
+    grid-area: 1 / 4 / 2 / 5;
+    background-color: rgba(30, 28, 28, 0.489);
+    color: rgb(239, 187, 92);
+    font-weight: bold;
+    margin-top: -200px;
+    z-index: 1;
+    pointer-events: none;}
+
+
+
+
+
+.renässansen,.barocken, .wienklassicismen, .romantiken, .modernismen, .kvinnor { 
+  width: 500px;
+  height: 300px;
+  border-radius: 15px;
+  cursor: pointer;
+  
+}
+.renässansen:hover,
+.barocken:hover,
+.wienklassicismen:hover,
+.romantiken:hover,
+.modernismen:hover {
+  transition: 0.2s;
+  box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
+  border-radius: 10px;
+  transform: scale(1.05);
+}
+
+
+.renText, .barText, .wienText, .romText, .modText, .kvinnorText {
+    width: 500px;
+    height: 100px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 0;
+}
+
+
+
+.kvinnor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    object-position: center 2%;
+}
+
+.kvinnor:hover {
+    transition: 0.2s;
+    box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+
+.kvinnorText {
+    width: 500px;
+    height: 100px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 0;
+}
+
+
+
