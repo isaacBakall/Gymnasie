@@ -8,57 +8,25 @@
     <title>Klassisk musik</title>
     
     <style>
-          #mp3ButtonJan {
-              display: none; /* Initially hide the button */
+          #mp3ButtonJan, #mp3ButtonPachelbel, #mp3ButtonAlbinoni, #mp3ButtonVivaldi, #mp3ButtonBach, #mp3ButtonHänd {
+              display: none;
               align-items: center;
               justify-content: center;
               padding: 10px;
               cursor: pointer;
           }
 
-          #mp3ButtonJan img {
-              width: 100px;
-              height: 100px;
-          }
-
-          #mp3ButtonPachelbel {
-              display: none; /* Initially hide the button */
-              align-items: center;
-              justify-content: center;
-              padding: 10px;
-              cursor: pointer;
-          }
-
-          #mp3ButtonPachelbel img {
+          #mp3ButtonJan img, #mp3ButtonPachelbel img, #mp3ButtonAlbinoni img, #mp3ButtonVivaldi img, #mp3ButtonBach img, #mp3ButtonHänd img  {
               width: 100px;
               height: 100px;
           }
           
-          #mp3ButtonAlbinoni {
-            display: none;
-            align-items: center;
-            justify-content: center;
-            padding: 10px;
-            cursor: pointer;
-        }
 
-        #mp3ButtonAlbinoni img {
-            width: 100px;
-            height: 100px;
-        }
+          #marginBach{
+            margin-right: 78rem;
+            position: absolute;
+          }
 
-        #mp3ButtonVivaldi {
-            display: none;
-            align-items: center;
-            justify-content: center;
-            padding: 10px;
-            cursor: pointer;
-        }
-
-        #mp3ButtonVivaldi img {
-            width: 100px;
-            height: 100px;
-        }
     </style>
 
 </head>
@@ -67,8 +35,8 @@
         <section class="grid-time">
             <div class="leftColumn">
                 <div class="JanPietersText">
-                    <div class="tom"></div>
-                    <div class="textJan" style="display: none">Jan Pieters Sweelinck (1562-1621) räknas vara den som inledde epoken och vid Georg Friedrich Händel (1685-1759) död tog musikepoken slut.</div>
+                    
+                    <div class="textJan" style="display: none">Sweelinck, född 1562 i Deventer, var en nederlänsk kompositör som anses var den som inledde musikepoken barocken. Främst känd för sina orgel och klaververk men även för sitt förfinande av kontrapunkten, ett samling verktyg som används för att få självständiga stämmor att hänga ihop. 1960 döptes en asteroid efter honom, 7621 Sweelinck</div>
                     <div id="mp3ButtonJan" onclick="togglePlayJan()">
                         <img id="playPauseIconJan" src="img/start.png" alt="Start">
                     </div>
@@ -90,8 +58,8 @@
             
             <div class="rightColumn">
                 <div class="JanPietersBild"> 
-                    <div class="bildJan" id="bildJanButton"></div>    <!--Jan Pierters Bild-->
-                    <div class="textName">Jan Pieters Sweelinck</div> <!--Jan Pierters Namn-->
+                    <div class="bildJan" id="bildJanButton"></div>    <!--Jan Pieterszoon Bild-->
+                    <div class="textName">Jan Pieterszoon Sweelinck</div> <!--Jan Pierters Namn-->
                     <div class="tom"></div>
                 </div>
                 
@@ -161,10 +129,14 @@
                     <div><p class="årtalH">1678-1741</p><p class="streckH">____________________________</p></div> <!--Johann Pachelbel streck-->
                 </div>
 
-                <div class="bachoHändelText">
-                    <div class="tom"></div>
-                    <div class="bildBar" id="bildBachHändelButton"></div>
-                    <div class="tom"></div>
+                <div class="bachAllt">
+                    <div id="mp3ButtonBach" onclick="togglePlayBach() ">
+                        <img id="playPauseIconBach" src="img/start.png" alt="Start"> 
+                    </div>
+                    <div>
+                        <p class="textBach" style="display: none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus pariatur maiores ex quo eligendi, quaerat, quam voluptatibus cumque non excepturi dicta odit eveniet facere illum rem veniam fugiat ipsam sit?</p>
+                    </div>
+                    <div class="bildBach" id="bildBachButton"></div>
                 </div>
             </div>
 
@@ -173,30 +145,37 @@
             </div>
             
             <div class="rightColumn3">
-                                <!-- Code for Antonio Vivaldi -->
                 <div class="AntioVivaldiText">
-                  
                   <div id="mp3ButtonVivaldi" onclick="togglePlayVivaldi()">
                       <img id="playPauseIconVivaldi" src="img/start.png" alt="Start">
                   </div>
+
                   <div class="textVivaldi" style="display: none">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </div>
+
                   <div class="tom"></div>
                 </div>
 
 
-                <div class="bachoHändelText">
-                    <div class="textName">Johann Sebastian Bach</div> <!--Johann Sebastian Bach Namn-->
-                    <div class="textName">Georg Friedrich Händel</div> <!--Georg Friedrich Händel Namn-->
+                <div class="bachoHändelTextOver">
+                    <div class="textName">Georg Friedrich Händel</div> <!--Johann Sebastian Bach Namn-->
+                    <div class="textName"id="marginBach">Johann Sebastian Bach</div> <!--Georg Friedrich Händel Namn-->
                     <div class="textName"></div>
                 </div>
 
-                <div class="bachoHändelBild">
-                    <div class="bildBach" id="bildBachButton"></div>
-                    <div class="bildHänd" id="bildHändelButton"></div>
-                    <div class="streckB">____________________________</div><p class="årtal">1685-1750</p> <p class="årtal2">1685-1759</p>
+                <div class="händAllt">
+                    <div class="bildHänd" id="bildHändButton"></div>
+                    <div>
+                        <p class="textHänd" style="display: none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus pariatur maiores ex quo eligendi, quaerat, quam voluptatibus cumque non excepturi dicta odit eveniet facere illum rem veniam fugiat ipsam sit?</p>
+                    </div>
+                    <div id="mp3ButtonHänd" onclick="togglePlayHänd() ">
+                        <img id="playPauseIconHänd" src="img/start.png" alt="Start"> 
+                    </div>
+                    
                 </div>
+                    <!--<div class="streckB">__________________________________</div><p class="årtal">1685-1750</p> <p class="årtal2">1685-1759</p>  -->
+                
             </div>
         </section>
 
@@ -359,6 +338,108 @@
                     }
                 });
             });
+
+
+
+
+            // Code for Johann Sebastian Bach
+            let audioBach = new Audio('./sound/Bach.mp3');
+            let isPlayingBach = false;
+            let playPauseIconBach = document.getElementById('playPauseIconBach');
+            let mp3ButtonBach = document.getElementById('mp3ButtonBach');
+
+            function togglePlayBach() {
+                if (isPlayingBach) {
+                    audioBach.pause();
+                    isPlayingBach = false;
+                    playPauseIconBach.src = 'img/start.png';
+                } else {
+                    audioBach.play();
+                    isPlayingBach = true;
+                    playPauseIconBach.src = 'img/pause.png';
+                }
+            }
+
+            document.getElementById('bildBachButton').addEventListener('click', function () {
+                var textBach = document.querySelector('.textBach');
+
+                if (textBach.style.display === 'none') {
+                    textBach.style.display = 'block';
+                    mp3ButtonBach.style.display = 'flex';
+                } else {
+                    textBach.style.display = 'none';
+                    mp3ButtonBach.style.display = 'none';
+                }
+
+                var elementsToToggleBach = document.querySelectorAll('.soundBach');
+
+                elementsToToggleBach.forEach(function (element) {
+                    if (element.style.display === 'none' || element.style.display === '') {
+                        element.style.display = 'block';
+                    } else {
+                        element.style.display = 'none';
+                    }
+                });
+            });
+
+
+
+            //Georg Friedrich Händel
+            let audioHänd = new Audio('./sound/Händel.mp3');
+            let isPlayingHänd = false;
+            let playPauseIconHänd = document.getElementById('playPauseIconHänd');
+            let mp3ButtonHänd = document.getElementById('mp3ButtonHänd');
+
+            function togglePlayHänd() {
+                if (isPlayingHänd) {
+                    audioHänd.pause();
+                    isPlayingHänd = false;
+                    playPauseIconHänd.src = 'img/start.png';
+                } else {
+                    audioHänd.play();
+                    isPlayingHänd = true;
+                    playPauseIconHänd.src = 'img/pause.png';
+                }
+            }
+
+            document.getElementById('bildHändButton').addEventListener('click', function () {
+                var textHänd = document.querySelector('.textHänd');
+
+                if (textHänd.style.display === 'none') {
+                    textHänd.style.display = 'block';
+                    mp3ButtonHänd.style.display = 'flex';
+                } else {
+                    textHänd.style.display = 'none';
+                    mp3ButtonHänd.style.display = 'none';
+                }
+
+                var elementsToToggleHänd = document.querySelectorAll('.soundHänd');
+
+                elementsToToggleHänd.forEach(function (element) {
+                    if (element.style.display === 'none' || element.style.display === '') {
+                        element.style.display = 'block';
+                    } else {
+                        element.style.display = 'none';
+                    }
+                });
+            });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

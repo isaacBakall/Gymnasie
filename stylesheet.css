@@ -47,10 +47,17 @@ html, body {
 }
 
 
-.epok9, .epok10, .JanPietersText, .JanPietersBild, .Johann_Pachelbel, .JohannPachelbelText, .TomasoAlbinoniBild, .TomasoAlbinonitext, .Vivaldibild, .AntioVivaldiText, .bachohändel, .bachoHändelText, .bachoHändelBild
+ .JanPietersBild, .Johann_Pachelbel, .JohannPachelbelText, .TomasoAlbinoniBild, .TomasoAlbinonitext, .Vivaldibild, .AntioVivaldiText, .bachohändel, .bachoHändelBild, .bachoHändelTextOver, .bachAllt, .händAllt
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+}
+
+.JanPietersText{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 0;
 }
@@ -84,7 +91,7 @@ html, body {
     background-image: url('./img/Johann_Pachelbel.png');
 }
 .bildtomaso{
-    background-image: url('./img/tomaso_albinoni.png');  
+    background-image: url('./img/Albinoni.png');  
 }
 .bildViv{
     background-image: url('./img/vivaldi.png');
@@ -149,14 +156,27 @@ html, body {
     font-family: 'Times New Roman', Times, serif;
     
 }
-.textJan,.textPachelbel,.textAlbinoni,.textVivaldi {
+.textJan,.textPachelbel,.textAlbinoni,.textVivaldi{
     font-size: 25px;
-    text-align: center;
+    text-align: justify;
     place-self: center;
     font-weight: bold;
     color: white;
     font-family: 'Times New Roman', Times, serif;
 }
+.textJan{
+    margin-left: 3rem;
+}
+
+.textBach, .textHänd{
+    font-size: 20px;
+    text-align: center;
+    place-self: center;
+    font-weight: bold;
+    color: white;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
 
 
 
@@ -194,7 +214,7 @@ html, body {
     overflow: hidden;
     position: absolute;
     margin-top: 12.5rem;
-    margin-left: -50px;
+    margin-left: -350px;
     
 }
 
