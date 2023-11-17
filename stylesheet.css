@@ -9,50 +9,27 @@ html, body {
     grid-gap: 0;
     margin: 0;
 }
-.grid2 {
-    display: grid;
-    grid-template-columns: 1fr 100px 1fr;
-    grid-gap: 0;
-    margin: 0;
-}
-.grid3 {
-    display: grid;
-    grid-template-columns: 1fr 100px 1fr;
-    grid-gap: 0;
-    margin: 0;
-}
+
+
 
 
 .leftColumn, .rightColumn {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(12, 250px);
     grid-gap: 0;
-    max-height: 100vh;
-}
-.leftColumn2, .rightColumn2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 0;
-    max-height: 100vh
+
+    
+    
 }
 
-.leftColumn3, .rightColumn3 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 0;
-    max-height: 100vh
-}
-
-
- .JanPietersBild, .Johann_Pachelbel, .JohannPachelbelText, .TomasoAlbinoniBild, .TomasoAlbinonitext, .Vivaldibild, .AntioVivaldiText, .bachohändel, .bachoHändelBild, .bachoHändelTextOver, .bachAllt, .händAllt
+ .JanPietersBild, .Johann_Pachelbel, .JohannPachelbelText, .TomasoAlbinoniBild, .TomasoAlbinonitext, .Vivaldibild, .AntioVivaldiText, .bachohändel, .bachoHändelBild, .bachoHändelTextOver, .BachBild, .GeorgHändelBild, .GeorgHändelText
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-gap: 0;
+    
 }
 
 .JanPietersText{
@@ -63,8 +40,8 @@ html, body {
 }
 .bildJan, .bildJoh, .bildtomaso, .bildViv, .bildBach, .bildHänd {
     background-size: cover;
-    width: 90%;
-    height: 90%;
+    width: 15em;
+    height: 15em;
     background-repeat: no-repeat;
     background-position: center top right;
     cursor: pointer;
@@ -75,9 +52,6 @@ html, body {
     overflow: hidden;
 } 
 
-.bildBach, .bildHänd{
-    margin-top: -3rem;
-}
 .bildJan:hover, .bildJoh:hover, .bildtomaso:hover, .bildViv:hover, .bildBach:hover, .bildHänd:hover {
     transition: 0.5s ease;
     transform: scale(1.10);
@@ -118,7 +92,7 @@ html, body {
 
 .timeline {
     background-color: rgb(82, 82, 83);
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,9 +137,11 @@ html, body {
     font-weight: bold;
     color: white;
     font-family: 'Times New Roman', Times, serif;
+
 }
 .textJan{
     margin-left: 3rem;
+    height: 100px;
 }
 
 .textBach, .textHänd{
@@ -201,11 +177,16 @@ html, body {
     font-weight: bold;
     
     color: white;
-    margin-left: 283px;
-    margin-top: -40px;
     position: absolute;
     overflow: hidden;
+    position: relative;
+    float: right;
+    margin-right:-50px;
+    line-height: 0.5em;
+    margin-top: -30px;
 }
+
+
 .streckB{
     font-size: 40px;
     text-align: left;
@@ -227,9 +208,9 @@ html, body {
 .årtalH{
     color: white;
     font-size: 30px;
-    margin-left: 283px;
     margin-top: -40px;
-    position: absolute;
+    font-weight: normal;
+
     
 }
 .årtal{
