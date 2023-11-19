@@ -40,7 +40,7 @@ html, body {
 
 
 
- .JanPietersBild, .Johann_Pachelbel, .JohannPachelbelText, .Vivaldibild, .AntonioVivaldiText, .BachBild, .bachText, .GeorgHändelBild, .GeorgHändelText, .ArrangeloCorelliText, .ArrangeloCorelliBild
+ .JanPietersBild, .Johann_Pachelbel, .Vivaldibild, .AntonioVivaldiText, .BachBild, .bachText, .GeorgHändelBild, .GeorgHändelText, .ArrangeloCorelliText, .ArrangeloCorelliBild
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -49,7 +49,7 @@ html, body {
     
 }
 
-.JanPietersText{
+.JanPietersText, .JohannPachelbelText{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
@@ -135,9 +135,12 @@ html, body {
     font-family: 'Times New Roman', Times, serif;
 
 }
-.textJan{
+.textJan, .textPachelbel{
     margin-left: 3rem;
     height: 100px;
+}
+.textPachelbel{
+    margin-top: -10rem;
 }
 
 .soundJan {
