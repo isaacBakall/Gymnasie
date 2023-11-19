@@ -115,7 +115,7 @@
             }
 
             document.getElementById('bildHändButton').addEventListener('click', function () {
-                var textHänd = document.querySelector('.GeorgHändelText');
+                var textHänd = document.querySelector('.textHänd');
 
                 togglePerson(textHänd, mp3ButtonHänd, '.soundHänd');
 
