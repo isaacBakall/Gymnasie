@@ -14,7 +14,8 @@
         #mp3ButtonAlbinoni,
         #mp3ButtonVivaldi,
         #mp3ButtonBach,
-        #mp3ButtonHänd {
+        #mp3ButtonHänd,
+        #mp3ButtonCore {
             display: none;
             align-items: center;
             justify-content: center;
@@ -27,15 +28,10 @@
         #mp3ButtonAlbinoni img,
         #mp3ButtonVivaldi img,
         #mp3ButtonBach img,
-        #mp3ButtonHänd img {
+        #mp3ButtonHänd img,
+        #mp3ButtonCore img {
             width: 100px;
             height: 100px;
-        }
-
-
-        #marginBach {
-            margin-right: 78rem;
-            position: absolute;
         }
     </style>
 
@@ -59,29 +55,29 @@
 
                 <div class="tomVänster"></div>
 
-                <div class="Johann_Pachelbel">
+                <div class="ArrangeloCorelliBild">
                     <div class="tom"></div>
-                    <div class="textName">Johann Pachelbel</div> <!--Johann Pachelbel Namn-->
-                    <div class="bildJoh" id="bildPachelbelButton"></div> <!--Johann Pachelbel Bild-->
+                    <div class="textName">Arrangelo Corelli</div> <!--Arrangelo Corelli Namn-->
+                    <div class="bildCore" id="bildCoreButton"></div> <!--Arrangelo Corelli Bild-->
                 </div>
 
 
-                <div class="Johann_Pachelbel_streck">
+                <div class="Arrangelo_Corelli_streck">
 
                     <div class="streckH">
                         <p>
                         <div class="årtalH">1562-1621</div>____________________________</p>
-                    </div> <!--Johann Pachelbel streck-->
+                    </div> <!--Arrangelo Corelli streck-->
                 </div>
 
-                <div class="TomasoAlbinonitext">
+                <div class="JohannPachelbelText">
                     <div class="tom"></div>
-                    <div class="textAlbinoni" style="display: none">
+                    <div class="textPachelbel" style="display: none">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.
                     </div>
-                    <div id="mp3ButtonAlbinoni" onclick="togglePlayAlbinoni()">
-                        <img id="playPauseIconAlbinoni" src="img/start.png" alt="Start">
+                    <div id="mp3ButtonPachelbel" onclick="togglePlayPachelbel()">
+                        <img id="playPauseIconPachelbel" src="img/start.png" alt="Start">
                     </div>
                 </div>
 
@@ -94,12 +90,12 @@
                     <div class="bildViv" id="bildVivaldiButton"></div> <!--Antonio Vivaldi Bild-->
                 </div>
 
-                <div class="Johann_Pachelbel_streck">
+                <div class="Arrangelo_Corelli_streck">
 
                     <div class="streckH">
                         <p>
                         <div class="årtalH">1678-1741</div>____________________________</p>
-                    </div> <!--Johann Pachelbel streck-->
+                    </div> <!--Arrangelo_Corelli streck-->
                 </div>
 
 
@@ -145,34 +141,35 @@
                     </div> <!--Jan Pierters Namn-->
                 </div>
 
-                <div class="JohannPachelbelText">
-                    <div id="mp3ButtonPachelbel" onclick="togglePlayPachelbel()">
-                        <img id="playPauseIconPachelbel" src="img/start.png" alt="Start">
+                <div class="ArrangeloCorelliText">
+                    <div id="mp3ButtonCore" onclick="togglePlayCore()">
+                        <img id="playPauseIconCore" src="img/start.png" alt="Start">
                     </div>
-                    <div class="textPachelbel" style="display: none">
+                    <div class="textCore" style="display: none">
                         Johann Pachelbel was a prolific composer and his body of work includes both sacred and secular
                         music.
                     </div>
                     <div class="tom"></div>
 
+            
                 </div>
 
                 <div class="tomHöger"></div>
 
-                <div class="TomasoAlbinoniBild">
-                    <div class="bildtomaso" id="bildTomasoButton"></div> <!--Tomaso Albinoni Bild-->
-                    <div class="textName">Tomaso Albinoni</div> <!--Tomaso Albinoni Namn-->
+                <div class="Johann_Pachelbel">
+                    <div class="bildJoh" id="bildPachelbelButton"></div> <!--Johann Pachelbel Bild-->
+                    <div class="textName">Johann Pachelbel</div> <!--Johann Pachelbel Namn-->
                     <div class="tom"></div> <!--Tomaso Albinoni Streck-->
                 </div>
-                <div class="TomasoAlbinoniStreck">
+                <div class="PachelbelStreck">
                     <div>
                         <p class="streckV">____________________________</p>
                         <p class="årtalV">1671-1750</p>
-                    </div> <!--Tomaso Albinoni Streck-->
+                    </div> <!--Johann Pachelbel Streck-->
                 </div>
 
 
-                <div class="AntioVivaldiText">
+                <div class="AntonioVivaldiText">
                     <div id="mp3ButtonVivaldi" onclick="togglePlayVivaldi()">
                         <img id="playPauseIconVivaldi" src="img/start.png" alt="Start">
                     </div>

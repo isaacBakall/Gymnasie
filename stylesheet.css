@@ -23,7 +23,7 @@ html, body {
     
 }
 
- .JanPietersBild, .Johann_Pachelbel, .JohannPachelbelText, .TomasoAlbinoniBild, .TomasoAlbinonitext, .Vivaldibild, .AntioVivaldiText, .bachohändel, .bachoHändelBild, .bachoHändelTextOver, .BachBild, .GeorgHändelBild, .GeorgHändelText
+ .JanPietersBild, .Johann_Pachelbel, .JohannPachelbelText, .Vivaldibild, .AntonioVivaldiText, .bachohändel, .bachoHändelBild, .bachoHändelTextOver, .BachBild, .GeorgHändelBild, .GeorgHändelText, .ArrangeloCorelliText, .ArrangeloCorelliBild
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -38,7 +38,7 @@ html, body {
     grid-template-rows: 1fr;
     grid-gap: 0;
 }
-.bildJan, .bildJoh, .bildtomaso, .bildViv, .bildBach, .bildHänd {
+.bildJan, .bildJoh, .bildViv, .bildBach, .bildHänd, .bildCore {
     background-size: cover;
     width: 15em;
     height: 15em;
@@ -52,7 +52,7 @@ html, body {
     overflow: hidden;
 } 
 
-.bildJan:hover, .bildJoh:hover, .bildtomaso:hover, .bildViv:hover, .bildBach:hover, .bildHänd:hover {
+.bildJan:hover, .bildJoh:hover, .bildViv:hover, .bildBach:hover, .bildHänd:hover, .bildCore:hover {
     transition: 0.5s ease;
     transform: scale(1.10);
     border: 5px solid white;
@@ -61,11 +61,13 @@ html, body {
 .bildJan {
     background-image: url('./img/jan.png'); 
 }
-.bildJoh{
-    background-image: url('./img/Johann_Pachelbel.png');
+
+.bildCore{
+    background-image: url('./img/Arcangelo_Corelli.png');
+    background-position: center;
 }
-.bildtomaso{
-    background-image: url('./img/Albinoni.png');  
+.bildJoh{
+    background-image: url('./img/Johann_Pachelbel.png');  
 }
 .bildViv{
     background-image: url('./img/vivaldi.png');
@@ -130,7 +132,7 @@ html, body {
     font-family: 'Times New Roman', Times, serif;
     
 }
-.textJan,.textPachelbel,.textAlbinoni,.textVivaldi{
+.textJan,.textPachelbel,.textAlbinoni,.textVivaldi, .textCore{
     font-size: 25px;
     text-align: justify;
     place-self: center;
@@ -201,14 +203,14 @@ html, body {
 
 .årtalV{
     color: white;
-    margin-top: -80px ;
+    margin-top: -80px;
     font-size: 30px;
     margin-left: 380px;
 }
 .årtalH{
     color: white;
     font-size: 30px;
-    margin-top: -40px;
+    margin-bottom: -20px;
     font-weight: normal;
 
     
@@ -224,7 +226,7 @@ html, body {
     color: white;
     font-size: 30px;
     position: absolute;
-    margin-top: 200px;
+    margin-top: 150px;
     margin-left: 333px;
 }
 

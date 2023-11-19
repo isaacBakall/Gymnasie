@@ -1,10 +1,3 @@
-
-            let audioJan = new Audio('./sound/Jan.mp3');
-            let isPlayingJan = false;
-            let playPauseIconJan = document.getElementById('playPauseIconJan');
-            let mp3ButtonJan = document.getElementById('mp3ButtonJan');
-
-
             //function toggle person
             function togglePerson(textPerson, mp3Person, soundPerson) {
 
@@ -41,6 +34,11 @@
             
 
             //code for Jan Pieterszoon Sweelinck
+            let audioJan = new Audio('./sound/Jan.mp3');
+            let isPlayingJan = false;
+            let playPauseIconJan = document.getElementById('playPauseIconJan');
+            let mp3ButtonJan = document.getElementById('mp3ButtonJan');
+
             function togglePlayJan() {
                 togglePlay(audioJan, playPauseIconJan);
             }
@@ -51,10 +49,32 @@
                 togglePerson(textJan, mp3ButtonJan, '.soundJan');
             });
 
+
+
+            //Arrangelo Corelli
+            let audioCore = new Audio('./sound/Jan.mp3');
+            let isPlayingCore = false;
+            let playPauseIconCore = document.getElementById('playPauseIconCore');
+            let mp3ButtonCore = document.getElementById('mp3ButtonCore');
+
+            function togglePlayCore() {
+                togglePlay(audioCore, playPauseIconCore);
+            }
+
+            document.getElementById('bildCoreButton').addEventListener('click', function () {
+                var textCore = document.querySelector('.textCore');
+
+                togglePerson(textCore, mp3ButtonCore, '.soundCore');
+
+            });
+
+
+
             //code for Johann Pachelbel
             let audioPachelbel = new Audio('./sound/pach.mp3');
             let playPauseIconPachelbel = document.getElementById('playPauseIconPachelbel');
             let mp3ButtonPachelbel = document.getElementById('mp3ButtonPachelbel');
+            let isPlayingPachelbel = false;
 
             function togglePlayPachelbel() {
                 togglePlay(audioPachelbel, playPauseIconPachelbel);
@@ -119,3 +139,7 @@
                 togglePerson(textHänd, mp3ButtonHänd, '.soundHänd');
 
             });
+
+
+
+            
