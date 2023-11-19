@@ -3,7 +3,7 @@ html, body {
     padding: 0;
 }
 
-.grid-time {
+.grid-time { /*biggest grid with left timeline and right*/
     display: grid;
     grid-template-columns: 1fr 100px 1fr;
     grid-gap: 0;
@@ -13,17 +13,34 @@ html, body {
 
 
 
-.leftColumn, .rightColumn {
+.leftColumn, .rightColumn { /*left and right side properties*/
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(12, 250px);
     grid-gap: 0;
-
-    
-    
 }
+.timeline { /*timeline in the middle*/
+    background-color: rgb(82, 82, 83);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .line{ /*line inside of the timeline*/
+    width: 2px;
+    height: 100%;
+    background-color: #f6f7f7;
+    
+  }
 
- .JanPietersBild, .Johann_Pachelbel, .JohannPachelbelText, .Vivaldibild, .AntonioVivaldiText, .bachohändel, .bachoHändelBild, .bachoHändelTextOver, .BachBild, .GeorgHändelBild, .GeorgHändelText, .ArrangeloCorelliText, .ArrangeloCorelliBild
+
+
+
+
+
+
+ .JanPietersBild, .Johann_Pachelbel, .JohannPachelbelText, .Vivaldibild, .AntonioVivaldiText, .BachBild, .bachText, .GeorgHändelBild, .GeorgHändelText, .ArrangeloCorelliText, .ArrangeloCorelliBild
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -38,7 +55,7 @@ html, body {
     grid-template-rows: 1fr;
     grid-gap: 0;
 }
-.bildJan, .bildJoh, .bildViv, .bildBach, .bildHänd, .bildCore {
+.bildJan, .bildCore, .bildJoh, .bildViv, .bildHänd, .bildBach {
     background-size: cover;
     width: 15em;
     height: 15em;
@@ -52,7 +69,7 @@ html, body {
     overflow: hidden;
 } 
 
-.bildJan:hover, .bildJoh:hover, .bildViv:hover, .bildBach:hover, .bildHänd:hover, .bildCore:hover {
+.bildJan:hover, .bildCore:hover, .bildJoh:hover, .bildViv:hover, .bildHänd:hover, .bildBach:hover{
     transition: 0.5s ease;
     transform: scale(1.10);
     border: 5px solid white;
@@ -72,42 +89,19 @@ html, body {
 .bildViv{
     background-image: url('./img/vivaldi.png');
 }
-.bildBach{
-    background-image: url('./img/bach.png');
-    background-position: 40% center;
-}
+
 .bildHänd{
     background-image: url('./img/händ.png');
 }
 
-
-
-
-
-
-
-
-.bildRen:hover, .bildBar:hover {
-    transition: 0.5s ease;
-    opacity: 0.5;
+.bildBach{
+    background-image: url('./img/bach.png');
+    background-position: 40% center;
 }
 
-.timeline {
-    background-color: rgb(82, 82, 83);
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .line{
-    width: 2px;
-    height: 100%;
-    background-color: #f6f7f7;
-    
-  }
 
-  .background {
+
+  .background { /*background for barrock*/
     --s: 50px;
     --c: #191b22;
     --_s: calc(2*var(--s)) calc(2*var(--s));
@@ -124,7 +118,7 @@ html, body {
 }
 
 
-.textName {
+.textName { /*People names*/
     font-size: 50px;
     text-align: center;
     place-self: center;
@@ -132,7 +126,7 @@ html, body {
     font-family: 'Times New Roman', Times, serif;
     
 }
-.textJan,.textPachelbel,.textAlbinoni,.textVivaldi, .textCore{
+.textJan, .textCore, .textPachelbel, .textVivaldi, .textHänd, .textBach{
     font-size: 25px;
     text-align: justify;
     place-self: center;
@@ -145,18 +139,6 @@ html, body {
     margin-left: 3rem;
     height: 100px;
 }
-
-.textBach, .textHänd{
-    font-size: 20px;
-    text-align: center;
-    place-self: center;
-    font-weight: bold;
-    color: white;
-    font-family: 'Times New Roman', Times, serif; 
-}
-
-
-
 
 .soundJan {
     margin-top: 100px;

@@ -105,7 +105,21 @@
             });
 
 
+            //Georg Friedrich Händel
+            let audioHänd = new Audio('./sound/Händel.mp3');
+            let playPauseIconHänd = document.getElementById('playPauseIconHänd');
+            let mp3ButtonHänd = document.getElementById('mp3ButtonHänd');
 
+            function togglePlayHänd() {
+                togglePlay(audioHänd, playPauseIconHänd);
+            }
+
+            document.getElementById('bildHändButton').addEventListener('click', function () {
+                var textHänd = document.querySelector('.GeorgHändelText');
+
+                togglePerson(textHänd, mp3ButtonHänd, '.soundHänd');
+
+            });
 
             // Code for Johann Sebastian Bach
             let audioBach = new Audio('./sound/Bach.mp3');
@@ -122,23 +136,7 @@
                 togglePerson(textBach, mp3ButtonBach, '.soundBach');
             });
 
-
-
-            //Georg Friedrich Händel
-            let audioHänd = new Audio('./sound/Händel.mp3');
-            let playPauseIconHänd = document.getElementById('playPauseIconHänd');
-            let mp3ButtonHänd = document.getElementById('mp3ButtonHänd');
-
-            function togglePlayHänd() {
-                togglePlay(audioHänd, playPauseIconHänd);
-            }
-
-            document.getElementById('bildHändButton').addEventListener('click', function () {
-                var textHänd = document.querySelector('.GeorgHändelText');
-
-                togglePerson(textHänd, mp3ButtonHänd, '.soundHänd');
-
-            });
+            
 
 
 
