@@ -1,140 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
     <title>Klassisk musik</title>
+
+    <style>
+        #mp3ButtonJan,
+        #mp3ButtonPachelbel,
+        #mp3ButtonAlbinoni,
+        #mp3ButtonVivaldi,
+        #mp3ButtonBach,
+        #mp3ButtonHänd,
+        #mp3ButtonCore {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #mp3ButtonJan img,
+        #mp3ButtonPachelbel img,
+        #mp3ButtonAlbinoni img,
+        #mp3ButtonVivaldi img,
+        #mp3ButtonBach img,
+        #mp3ButtonHänd img,
+        #mp3ButtonCore img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+
 </head>
+
 <body>
-    <section class="grid-time">
-        <div class="leftColumn">
-            <div class="epok1">
-                <div class="tom"></div>
-                <div class="bildRen"></div>
-                <div class="tom"></div>
-            </div>
-            <div class="tomVänster"></div>
-            <div class="epok2">
-                <div class="tom"></div>
-                <div class="bildBar"></div>
-                <div class="tom"></div>
-            </div>
+    <div class="background">
+        <section class="grid-time">
+            <div class="leftColumn">
+                <div class="JanPietersText">
+
+                    <div class="textJan" style="display: none">Sweelinck, född 1562 i Deventer, var en nederlänsk
+                        kompositör som anses var den som inledde musikepoken barocken. Främst känd för sina orgel och
+                        klaververk men även för sitt förfinande av kontrapunkten, ett samling verktyg som används för
+                        att få självständiga stämmor att hänga ihop. 1960 döptes en asteroid efter honom, 7621 Sweelinck
+                    </div>
+                    <div id="mp3ButtonJan" onclick="togglePlayJan()">
+                        <img id="playPauseIconJan" src="img/start.png" alt="Start">
+                    </div>
+                </div>
+
+                <div class="tomVänster"></div>
+
+                <div class="ArrangeloCorelliBild">
+                    <div class="tom"></div>
+                    <div class="textName">Arrangelo Corelli</div> <!--Arrangelo Corelli Namn-->
+                    <div class="bildCore" id="bildCoreButton"></div> <!--Arrangelo Corelli Bild-->
+                </div>
+
+
+                <div class="Arrangelo_Corelli_streck">
+
+                    <div class="streckH">
+                        <p>
+                        <div class="årtalH">1653-1713</div>____________________________</p>
+                    </div> <!--Arrangelo Corelli streck-->
+                </div>
+
+                <div class="JohannPachelbelText">
+                    <div class="textPachelbel" style="display: none">
+                        Pachelbel, född 1653 i Nürnberg, var en tysk kompositör och en av sin tids främsta organister. Mest känd för sitt stycke kanon i D-dur som även idag ofta förekommer inom populärkultur. Han var en stor förebild och inspiration till Johann Sebastian Bach och enligt Bachs son, Carl Philipp Emanuel Bach, den kompositör som Bach beundrade mest. Han skrev musik i många genrer bland annat, kyrkomusik, klaververk och sånger.
+                    </div>
+                    <div id="mp3ButtonPachelbel" onclick="togglePlayPachelbel()">
+                        <img id="playPauseIconPachelbel" src="img/start.png" alt="Start">
+                    </div>
+                </div>
+
+                <div class="tomVänster"></div>
+
+
+                <div class="Vivaldibild">
+                    <div class="tom"></div>
+                    <div class="textName">Antonio Vivaldi</div> <!--Antonio Vivaldi Namn-->
+                    <div class="bildViv" id="bildVivaldiButton"></div> <!--Antonio Vivaldi Bild-->
+                </div>
+
+                <div class="Vivaldi_streck">
+
+                    <div class="streckH">
+                        <p>
+                        <div class="årtalH">1678-1741</div>____________________________</p>
+                    </div> <!--Vivaldi streck-->
+                </div>
+
+
+
+
+                <div class="GeorgHändelText">
+                    <div class="tom"></div>
+
+                    <div class="textHänd" style="display: none">
+                        Johann Pachelbel was a prolific composer and his body of work includes both sacred and secular
+                        music.
+                    </div>
+
+                    <div id="mp3ButtonHänd" onclick="togglePlayHänd()">
+                        <img id="playPauseIconHänd" src="img/start.png" alt="Start">
+                    </div>
             
-        </div>
+                </div>
 
-        <div class="timeline"></div>
+                <div class="tomVänster"></div>
 
-        <div class="rightColumn">
-            <div class="epok3">
-                <div class="tom"></div>
-                <div class="bildRen"></div>
-                <div class="tom"></div>
+                <div class="BachBild">
+                    <div class="tom"></div>
+                    <div class="textName">Johann Sebastian Bach</div> <!--Johann Sebastian Bach Namn-->
+                    <div class="bildBach" id="bildBachButton"></div> <!--Johann Sebastian Bach Bild-->
+                </div>
+
+                <div class="streckBach">
+                    <div class="streckH">
+                        <p>
+                        <div class="årtalH">1685-1750</div>____________________________</p>
+                    </div> <!--Bach Streck-->
+                </div>
             </div>
-            <div class="tomHöger">
-                <div class="tom"></div>
-                <div class="bildRen"></div>
-                <div class="tom"></div>
-            </div>
-            <div class="epok4">
-                <div class="tom"></div>
-                <div class="bildRen"></div>
-                <div class="tom"></div>
-            </div>
-        </div>
-    </section>
 
-
-
-
-
-    <section class="grid2">
-        <div class="leftColumn2">
-            <div class="tomVänster">
-                <div class="tom"></div>
-                <div class="bildRen"></div>
-                <div class="tom"></div>
+            <div class="timeline">
+                <div class="line"></div>
             </div>
-            <div class="epok4">
-                <div class="tom"></div>
-                <div class="bildRen"></div>
-                <div class="tom"></div> 
-            </div>
-            <div class="tomVänster">
-                <div class="tom"></div>
-                <div class="bildBar"></div>
-                <div class="tom"></div>
-            </div>
+
+            <div class="rightColumn">
+                <div class="JanPietersBild">
+                    <div class="bildJan" id="bildJanButton"></div> <!--Jan Pieterszoon Bild-->
+                    <div class="textName">Jan Pieterszoon Sweelinck</div> <!--Jan Pierters Namn-->
+                    <div class="tom"></div>
+                </div>
+
+                <div class="streckJan">
+                    <div>
+                        <p class="streckV">____________________________</p>
+                        <p class="årtalV">1562-1621</p>
+                    </div> <!--Jan Pierters Namn-->
+                </div>
+
+                <div class="ArrangeloCorelliText">
+                    <div id="mp3ButtonCore" onclick="togglePlayCore()">
+                        <img id="playPauseIconCore" src="img/start.png" alt="Start">
+                    </div>
+                    <div class="textCore" style="display: none">
+                        Johann Pachelbel was a prolific composer and his body of work includes both sacred and secular
+                        music.
+                    </div>
+                    <div class="tom"></div>
+
             
-        </div>
+                </div>
 
-        <div class="timeline2"></div>
+                <div class="tomHöger"></div>
 
-        <div class="rightColumn2">
-            <div class="tomHöger">
-                <div class="tom"></div>
-                <div class="bildRen"></div>
-                <div class="tom"></div>
+                <div class="Johann_Pachelbel">
+                    <div class="bildJoh" id="bildPachelbelButton"></div> <!--Johann Pachelbel Bild-->
+                    <div class="textName">Johann Pachelbel</div> <!--Johann Pachelbel Namn-->
+                    <div class="tom"></div> <!--Tomaso Albinoni Streck-->
+                </div>
+                <div class="PachelbelStreck">
+                    <div>
+                        <p class="streckV">____________________________</p>
+                        <p class="årtalV">1653-1706</p>
+                    </div> <!--Johann Pachelbel Streck-->
+                </div>
+
+
+                <div class="AntonioVivaldiText">
+                    <div id="mp3ButtonVivaldi" onclick="togglePlayVivaldi()">
+                        <img id="playPauseIconVivaldi" src="img/start.png" alt="Start">
+                    </div>
+
+                    <div class="textVivaldi" style="display: none">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </div>
+
+                    <div class="tom"></div>
+                </div>
+
+                <div class="tomHöger"></div>
+
+                <div class="GeorgHändelBild">
+                    <div class="bildHänd" id="bildHändButton"></div><!--Georg Friedrich Händel Bild-->
+                    <div class="textName">Georg Friedrich Händel</div> <!--Georg Friedrich Händel Namn-->
+                    <div class="tom"></div> <!--Georg Friedrich Händel Streck-->
+                </div>
+
+                <div class="GeorgHändelStreck">
+                    <div>
+                        <p class="streckV">____________________________</p>
+                        <p class="årtalV">1685-1759</p>
+                    </div> <!--Georg Friedrich Händel Streck-->
+                </div>
+
+
+
+                <div class="bachText">
+                    <div id="mp3ButtonBach" onclick="togglePlayBach() ">
+                        <img id="playPauseIconBach" src="img/start.png" alt="Start">
+                    </div>
+                    <div>
+                        <p class="textBach" style="display: none">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Repellendus pariatur maiores ex quo eligendi, quaerat, quam voluptatibus cumque non
+                            excepturi dicta odit eveniet facere illum rem veniam fugiat ipsam sit?</p>
+                    </div>
+                    <div class="tom"></div>
+                </div>
+
+
+
+
+
             </div>
-            <div class="epok6">
-                <div class="tom"></div>
-                <div class="bildRen"></div>
-                <div class="tom"></div>
-            </div>
-            <div class="tomHöger">
-                <div class="tom"></div>
-                <div class="bildRen"></div>
-                <div class="tom"></div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <section class="grid3">
-        <div class="leftColumn3">
-            <div class="epok7">
-                <div class="tom"></div>
-                <div class="bildRen"></div>
-                <div class="tom"></div>
-            </div>
-            <div class="tomVänster"></div>
-            <div class="epok8">
-                <div class="tom"></div>
-                <div class="bildBar"></div>
-                <div class="tom"></div>
-            </div>
-            
-        </div>
-
-        <div class="timeline3"></div>
-
-        <div class="rightColumn3">
-            <div class="epok9">
-                <div class="tom"></div>
-                <div class="bildRen"></div>
-                <div class="tom"></div>
-            </div>
-            <div class="tomHöger">
-                <div class="tom"></div>
-                <div class="bildRen"></div>
-                <div class="tom"></div>
-            </div>
-            <div class="epok10">
-                <div class="tom"></div>
-                <div class="bildRen"></div>
-                <div class="tom"></div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
+        </section>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
