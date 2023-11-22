@@ -118,14 +118,24 @@ html, body {
 }
 
 
-.textName { /*People names*/
+.textNameV { /*People names*/
     font-size: 50px;
-    text-align: center;
+    text-align: right;
     place-self: center;
     color: white;
     font-family: 'Times New Roman', Times, serif;
+    margin-left: 3rem;
     
 }
+.textNameH{
+    font-size: 50px;
+    text-align: left;
+    place-self: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: -4rem;
+}
+
 .textJan, .textCore, .textPachelbel, .textVivaldi, .textHänd, .textBach{
     font-size: 25px;
     text-align: justify;
@@ -155,7 +165,7 @@ html, body {
     
     color: white;
     margin-left: -50px;
-    margin-top: -40px;
+    margin-top: -20px;
     overflow: hidden;
 }
 .streckH{
@@ -183,6 +193,7 @@ html, body {
     position: absolute;
     margin-top: 12.5rem;
     margin-left: -350px;
+    z-index: -1;
     
 }
 
