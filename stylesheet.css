@@ -252,7 +252,13 @@ html, body {
     margin-left: 333px;
 }
 
-
+.logo{
+    width: 100px;
+    border-radius: 50%;
+}
+.logo:hover{
+    opacity: 0.5;
+}
 
 /*--------------------------------*/
 
