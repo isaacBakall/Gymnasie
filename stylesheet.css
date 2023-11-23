@@ -9,9 +9,35 @@ html, body {
     grid-gap: 0;
     margin: 0;
 }
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    padding: 10px;
+  }
 
+  .navbar h1 {
+    margin: 0;
+    color: white;
+    font-size: 50px;
+    margin-top: -40px;
+  }
 
+  .navbar .top-left {
+    order: -1;
+  }
 
+  .links-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+  }
 
 .leftColumn, .rightColumn { /*left and right side properties*/
     display: grid;
