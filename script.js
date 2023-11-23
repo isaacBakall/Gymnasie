@@ -52,7 +52,7 @@
 
 
             //Arrangelo Corelli
-            let audioCore = new Audio('./sound/Jan.mp3');
+            let audioCore = new Audio('./sound/Core.mp3');
             let isPlayingCore = false;
             let playPauseIconCore = document.getElementById('playPauseIconCore');
             let mp3ButtonCore = document.getElementById('mp3ButtonCore');
