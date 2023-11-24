@@ -9,35 +9,6 @@ html, body {
     grid-gap: 0;
     margin: 0;
 }
-.navbar {
-    display: flex;
-    flex-direction: column;
-    background-color: #333;
-    padding: 10px;
-  }
-
-  .navbar h1 {
-    margin: 0;
-    color: white;
-    font-size: 50px;
-    margin-top: -40px;
-  }
-
-  .navbar .top-left {
-    order: -1;
-  }
-
-  .links-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .navbar a {
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-  }
 
 .leftColumn, .rightColumn { /*left and right side properties*/
     display: grid;
@@ -251,16 +222,65 @@ html, body {
     margin-top: 150px;
     margin-left: 333px;
 }
+/*--------------NAVBAR------------------*/
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #001f1e77;
+    padding: 10px;
+  }
+
+  .navbar p {
+    margin: 0;
+    color: white;
+    font-size: 150px;
+    margin-top: -40px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    
+
+  }
+
+  .navbar .top-left {
+    order: -1;
+  }
+
+  .links-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+  }
+
+
+
 
 .logo{
-    width: 100px;
+    width: 50px;
     border-radius: 50%;
 }
-.logo:hover{
+.logo:hover, .arrow:hover, .arrowRight:hover{
     opacity: 0.5;
 }
 
-/*--------------------------------*/
+.arrow{
+    width: 100px;
+    border-radius: 50%;
+}
+.arrowRight{
+    transform: rotate(180deg);
+    width: 100px;
+    border-radius: 50%;
+}
+
+/*--------------NAVBAR------------------*/
+
+/*---------------MAIN-----------------*/
 
 .main {
     --u: 20px;
