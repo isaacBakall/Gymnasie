@@ -37,7 +37,7 @@ html, body {
 
 
 
- .JanPietersBild, .Johann_Pachelbel, .Vivaldibild, .AntonioVivaldiText, .BachBild, .bachText, .GeorgHändelBild, .GeorgHändelText, .ArrangeloCorelliText, .ArrangeloCorelliBild
+ .JanPietersBild, .Johann_Pachelbel, .Vivaldibild, .BachBild, .GeorgHändelBild, .ArrangeloCorelliBild
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -46,11 +46,18 @@ html, body {
     
 }
 
-.JanPietersText, .JohannPachelbelText{
+.JanPietersText, .JohannPachelbelText, .AntonioVivaldiText, .GeorgHändelText{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 100px 2fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 0;
+}
+.ArrangeloCorelliText, .AntonioVivaldiText, .bachText {
+    display: grid;
+    grid-template-columns: 1fr 2fr 100px;
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+    
 }
 .bildJan, .bildCore, .bildJoh, .bildViv, .bildHänd, .bildBach {
     background-size: cover;
@@ -135,13 +142,13 @@ html, body {
 
 .textJan, .textCore, .textPachelbel, .textVivaldi, .textHänd, .textBach{
     font-size: 25px;
-    text-align: justify;
     place-self: center;
     font-weight: bold;
     color: white;
     font-family: 'Times New Roman', Times, serif;
-
+    text-align: justify;
 }
+
 .textJan, .textPachelbel{
     margin-left: 3rem;
     height: 100px;
