@@ -33,9 +33,58 @@ html, body {
 
 
 
+/*________________________________renässansen_____________________________________________________________*/
+
+.JosquinDesPrezBild
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+    
+}
+
+.JosquinDesPrezText{
+    display: grid;
+    grid-template-columns: 100px 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+}
+.PalestrinaText  {
+    display: grid;
+    grid-template-columns: 1fr 2fr 100px;
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+    
+}
+.bildJos, .bildPal {
+    background-size: cover;
+    width: 15em;
+    height: 15em;
+    background-repeat: no-repeat;
+    background-position: center top right;
+    cursor: pointer;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-top: 5%;
+    margin-left: 5%;
+    overflow: hidden;
+} 
+
+.bildJos:hover{
+    transition: 0.5s ease;
+    transform: scale(1.10);
+    border: 5px solid white;
+} 
 
 
 
+
+.bildJos{
+    background-image: url('./img/Josquin.png');
+}
+
+/*-----------------------------------BARQUE-------------------------------------------------------------*/
 
  .JanPietersBild, .Johann_Pachelbel, .Vivaldibild, .BachBild, .GeorgHändelBild, .ArrangeloCorelliBild
 {
@@ -102,6 +151,9 @@ html, body {
     background-image: url('./img/bach.png');
     background-position: 40% center;
 }
+
+
+
 
 
 
