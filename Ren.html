@@ -12,13 +12,8 @@
     <title>Klassisk musik</title>
 
     <style>
-        #mp3ButtonJan,
-        #mp3ButtonPachelbel,
-        #mp3ButtonAlbinoni,
-        #mp3ButtonVivaldi,
-        #mp3ButtonBach,
-        #mp3ButtonHänd,
-        #mp3ButtonCore {
+        #mp3ButtonJos
+        {
             display: none;
             align-items: center;
             justify-content: center;
@@ -28,23 +23,11 @@
         }
         
 
-        #mp3ButtonJan img,
-        #mp3ButtonPachelbel img,
-        #mp3ButtonAlbinoni img,
-        #mp3ButtonVivaldi img,
-        #mp3ButtonBach img,
-        #mp3ButtonHänd img,
-        #mp3ButtonCore img {
+        #mp3ButtonJos img{
             width: 100px;
             height: 100px;
         }
-        #mp3ButtonJan img:hover,
-        #mp3ButtonPachelbel img:hover,
-        #mp3ButtonAlbinoni img:hover,
-        #mp3ButtonVivaldi img:hover,
-        #mp3ButtonBach img:hover,
-        #mp3ButtonHänd img:hover,
-        #mp3ButtonCore img:hover{
+        #mp3ButtonJos img:hover{
         filter: brightness(50%);
         }
 
@@ -68,16 +51,16 @@
     <div class="background">
         <section class="grid-time">
             <div class="leftColumn">
-                <div class="JanPietersText">
+                <div class="JosquinDesPrezText">
                     <div class="tom"></div>
 
-                    <div class="textJan" style="display: none">Sweelinck, född 1562 i Deventer, var en nederlänsk
+                    <div class="textJos" style="display: none">Sweelinck, född 1562 i Deventer, var en nederlänsk
                         kompositör som anses var den som inledde musikepoken barocken. Främst känd för sina orgel och
                         klaververk men även för sitt förfinande av kontrapunkten, ett samling verktyg som används för
                         att få självständiga stämmor att hänga ihop. 1960 döptes en asteroid efter honom, 7621 Sweelinck
                     </div>
-                    <div id="mp3ButtonJan" onclick="togglePlayJan()">
-                        <img id="playPauseIconJan" src="img/start.png" alt="Start">
+                    <div id="mp3ButtonJos" onclick="togglePlayJos()">
+                        <img id="playPauseIconJos" src="img/start.png" alt="Start">
                     </div>
                 </div>
 
@@ -253,7 +236,7 @@
             </div>
         </section>
     </div>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="ren.js"></script>
 </body>
 
 </html>

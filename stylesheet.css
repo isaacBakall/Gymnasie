@@ -71,12 +71,20 @@ html, body {
     overflow: hidden;
 } 
 
-.bildJos:hover{
+.bildJos:hover, .bildPal:hover{
     transition: 0.5s ease;
     transform: scale(1.10);
     border: 5px solid white;
 } 
 
+.textJos{
+    font-size: 25px;
+    place-self: center;
+    font-weight: bold;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
 
 
 

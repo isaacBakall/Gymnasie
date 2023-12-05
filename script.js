@@ -31,7 +31,8 @@
                     playPauseIconPerson.src = 'img/pause.png';
                 }
             }
-            
+
+            //BAR ---------------------------------------------------------------
 
             //code for Jan Pieterszoon Sweelinck
             let audioJan = new Audio('./sound/Jan.mp3');
