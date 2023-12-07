@@ -12,7 +12,7 @@
     <title>Klassisk musik</title>
 
     <style>
-        #mp3ButtonJos
+        #mp3ButtonJos, #mp3ButtonPal, #mp3ButtonTal, #mp3ButtonByr, #mp3ButtonDuf, #mp3ButtonLas
         {
             display: none;
             align-items: center;
@@ -23,11 +23,11 @@
         }
         
 
-        #mp3ButtonJos img{
+        #mp3ButtonJos img, #mp3ButtonPal img, #mp3ButtonTal img, #mp3ButtonByr img, #mp3ButtonDuf img, #mp3ButtonLas img {
             width: 100px;
             height: 100px;
         }
-        #mp3ButtonJos img:hover{
+        #mp3ButtonJos img:hover,#mp3ButtonPal img:hover, #mp3ButtonTal img:hover, #mp3ButtonByr img:hover, #mp3ButtonDuf img:hover, #mp3ButtonLas img:hover {
         filter: brightness(50%);
         }
 
@@ -51,93 +51,93 @@
     <div class="background">
         <section class="grid-time">
             <div class="leftColumn">
-                <div class="JosquinDesPrezText">
+                <div class="GuillaumeDufayText">
                     <div class="tom"></div>
 
-                    <div class="textJos" style="display: none">Sweelinck, född 1562 i Deventer, var en nederlänsk
+                    <div class="textDuf" style="display: none">Sweelinck, född 1562 i Deventer, var en nederlänsk
                         kompositör som anses var den som inledde musikepoken barocken. Främst känd för sina orgel och
                         klaververk men även för sitt förfinande av kontrapunkten, ett samling verktyg som används för
                         att få självständiga stämmor att hänga ihop. 1960 döptes en asteroid efter honom, 7621 Sweelinck
                     </div>
-                    <div id="mp3ButtonJos" onclick="togglePlayJos()">
-                        <img id="playPauseIconJos" src="img/start.png" alt="Start">
+                    <div id="mp3ButtonDuf" onclick="togglePlayDuf()">
+                        <img id="playPauseIconDuf" src="img/start.png" alt="Start">
                     </div>
                 </div>
 
                 <div class="tomVänster"></div>
 
-                <div class="ArrangeloCorelliBild">
+                <div class="JosquinDesPrezBild">
                     <div class="tom"></div>
-                    <div class="textNameV">Arrangelo<br>Corelli</div> <!--Arrangelo Corelli Namn-->
-                    <div class="bildCore" id="bildCoreButton"></div> <!--Arrangelo Corelli Bild-->
+                    <div class="textNameV">Josquin<br>des<br>Prez</div> <!--Josquin des Prez Namn-->
+                    <div class="bildJos" id="bildJosButton"></div> <!--Josquin des Prez Bild-->
                 </div>
 
 
-                <div class="Arrangelo_Corelli_streck">
+                <div class="Josquin_streck">
 
                     <div class="streckH">
                         <p>
-                        <div class="årtalH">1653-1713</div>____________________________</p>
-                    </div> <!--Arrangelo Corelli streck-->
+                        <div class="årtalH">1450–1521</div>____________________________</p>
+                    </div> <!--JosquinDesPrez streck-->
                 </div>
 
-                <div class="JohannPachelbelText">
+                <div class="ThomasTallisText">
                     <div class="tom"></div>
-                    <div class="textPachelbel" style="display: none">
-                        Pachelbel, född 1653 i Nürnberg, var en tysk kompositör och en av sin tids främsta organister. Mest känd för sitt stycke kanon i D-dur som även idag ofta förekommer inom populärkultur. Han var en stor förebild och inspiration till Johann Sebastian Bach och enligt Bachs son, Carl Philipp Emanuel Bach, den kompositör som Bach beundrade mest. Han skrev musik i många genrer bland annat, kyrkomusik, klaververk och sånger.
+                    <div class="textTal" style="display: none">
+                        Pachelbel, född 1653 i Nürnberg, var en tysk kompositör och en av sin tids främsta organister. Mest känd för sitt stycke kanon i D-dur som även idag ofta förekommer inom populärkultur. Han var en stor förebild och inspiration till Talann Sebastian Bach och enligt Bachs son, Carl Philipp Emanuel Bach, den kompositör som Bach beundrade mest. Han skrev musik i många genrer bland annat, kyrkomusik, klaververk och sånger.
                     </div>
-                    <div id="mp3ButtonPachelbel" onclick="togglePlayPachelbel()">
-                        <img id="playPauseIconPachelbel" src="img/start.png" alt="Start">
+                    <div id="mp3ButtonTal" onclick="togglePlayTal()">
+                        <img id="playPauseIconTal" src="img/start.png" alt="Start">
                     </div>
                 </div>
 
                 <div class="tomVänster"></div>
 
 
-                <div class="Vivaldibild">
+                <div class="PalestrinaBild">
                     <div class="tom"></div>
-                    <div class="textNameV">Antonio<br>Vivaldi</div> <!--Antonio Vivaldi Namn-->
-                    <div class="bildViv" id="bildVivaldiButton"></div> <!--Antonio Vivaldi Bild-->
+                    <div class="textNameV">Giovanni<br>Pierluigi<br>da<br>Palestrina</div> <!-- Palestrina Namn -->
+                    <div class="bildPal" id="bildPalButton"></div> <!-- Palestrina Bild -->
                 </div>
+                
 
-                <div class="Vivaldi_streck">
+                <div class="PalestrinaStreck">
 
                     <div class="streckH">
-                        <p>
-                        <div class="årtalH">1678-1741</div>____________________________</p>
-                    </div> <!--Vivaldi streck-->
+                        <div class="årtalH"><p>1525–1594</div>____________________________</p>
+                    </div> <!--Byrd streck-->
                 </div>
 
 
 
 
-                <div class="GeorgHändelText">
+                <div class="OrlandodiLassoText">
                     <div class="tom"></div>
-                    <div class="textHänd" style="display: none">
+                    <div class="textLas" style="display: none">
                         Händel, född 1685 Halle an der Saale, var en tysk-engelsk kompositör berömd för sina oratorier, concerti grossi och operor. Trots att han föddes i Tyskland studerade han och blev känd som tonsättare i Italien. Bland de mest kända och betydelsefulla verken hör oratoriet Messias, konserterna Vattenmusik och sviten Musik till det kungliga fyrverkeriet.
                         Där Messias kan anses det kändaste oratoriet, ett stort musikaliskt verk för orkester med berättande sång, någonsin. Vid Händels död 1759 anses musikstilen barocken ta slut.
 
                     </div>
 
-                    <div id="mp3ButtonHänd" onclick="togglePlayHänd()">
-                        <img id="playPauseIconHänd" src="img/start.png" alt="Start">
+                    <div id="mp3ButtonLas" onclick="togglePlayLas()">
+                        <img id="playPauseIconLas" src="img/start.png" alt="Start">
                     </div>
             
                 </div>
 
                 <div class="tomVänster"></div>
 
-                <div class="BachBild">
+                <div class="ByrdBild">
                     <div class="tom"></div>
-                    <div class="textNameV">Johann<br>Sebastian<br>Bach</div> <!--Johann Sebastian Bach Namn-->
-                    <div class="bildBach" id="bildBachButton"></div> <!--Johann Sebastian Bach Bild-->
+                    <div class="textNameV">William<br>Byrd</div> <!--William Byrd Namn-->
+                    <div class="bildByr" id="bildByrButton"></div> <!--William Byrd Bild-->
                 </div>
 
-                <div class="streckBach">
+                <div class="streckByr">
                     <div class="streckH">
                         <p>
-                        <div class="årtalH">1685-1750</div>____________________________</p>
-                    </div> <!--Bach Streck-->
+                        <div class="årtalH">1540–1623</div>____________________________</p>
+                    </div> <!--Byrd streck-->
                 </div>
             </div>
 
@@ -146,25 +146,25 @@
             </div>
 
             <div class="rightColumn">
-                <div class="JosquinDesPrezBild">
-                    <div class="bildJos" id="bildJosButton"></div> <!-- Josquin Des Prez Bild-->
-                    <div class="textNameH">Josquin<br>des<br>Prez</div> <!--Josquin des Prez-->
+                <div class="GuillaumeDufayBild">
+                    <div class="bildDuf" id="bildDufButton"></div> <!--Guillaume Dufay  Bild-->
+                    <div class="textNameH">Guillaume<br>Dufay</div> <!-- Guillaume Dufay Namn-->
                     <div class="tom"></div>
                 </div>
 
                 <div class="streckJos">
                     <div>
                         <p class="streckV">____________________________</p>
-                        <p class="årtalV">1450–1521</p>
-                    </div> <!--Jan Pierters Namn-->
+                        <p class="årtalV">1397–1474</p>
+                    </div> <!--Guillaume Dufay Streck-->
                 </div>
 
-                <div class="ArrangeloCorelliText">
+                <div class="JosquinDesPrezText">
                     
-                    <div id="mp3ButtonCore" onclick="togglePlayCore()">
-                        <img id="playPauseIconCore" src="img/start.png" alt="Start">
+                    <div id="mp3ButtonJos" onclick="togglePlayJos()">
+                        <img id="playPauseIconJos" src="img/start.png" alt="Start">
                     </div>
-                    <div class="textCore" style="display: none">
+                    <div class="textJos" style="display: none">
                         Corelli, född 1653 i Fusignano, var en italiensk kompositör främst känd för sin påverkan på fiolens stil och som den första som enbart blev berömd för sin instrumentala musik. Vid 17 års ålder blev han försteviolinst och kammarmusiker hos drottning Kristina och för henne skrev han sina 12 trio sonatas. Han har hyllats av många kompositörer, bland annat Vivaldi och Rachmaninoff, och hans 12 Concerti Grossi gjorde concerto grosso till ett populärt musikformat.
 
                     </div>
@@ -175,25 +175,25 @@
 
                 <div class="tomHöger"></div>
 
-                <div class="Johann_Pachelbel">
-                    <div class="bildJoh" id="bildPachelbelButton"></div> <!--Johann Pachelbel Bild-->
-                    <div class="textNameH">Johann<br>Pachelbel</div> <!--Johann Pachelbel Namn-->
-                    <div class="tom"></div> <!--Tomaso Albinoni Streck-->
+                <div class="ThomasTallisBild">
+                    <div class="bildTal" id="bildTalButton"></div> <!--Thomas_Tallis Bild-->
+                    <div class="textNameH">Thomas<br>Tallis</div> <!--Thomas_Tallis Namn-->
+                    <div class="tom"></div> <!--Thomas_Tallis Streck-->
                 </div>
-                <div class="PachelbelStreck">
+                <div class="TallisStreck">
                     <div>
                         <p class="streckV">____________________________</p>
-                        <p class="årtalV">1653-1706</p>
-                    </div> <!--Johann Pachelbel Streck-->
+                        <p class="årtalV">1505–1585</p>
+                    </div> <!--Thomas_Tallis Streck-->
                 </div>
 
 
-                <div class="AntonioVivaldiText">
-                    <div id="mp3ButtonVivaldi" onclick="togglePlayVivaldi()">
-                        <img id="playPauseIconVivaldi" src="img/start.png" alt="Start">
+                <div class="PalestrinaText">
+                    <div id="mp3ButtonPal" onclick="togglePlayPal()">
+                        <img id="playPauseIconPal" src="img/start.png" alt="Start">
                     </div>
 
-                    <div class="textVivaldi" style="display: none">
+                    <div class="textPal" style="display: none">
                         Vivaldi, född 1678 i Venedig, var en italiensk violinist, präst och tonsättare som från en ung ålder studerade fiol hos sin fader, Giovanni Battista Vivaldi. Mest känd för Le quattro stagioni (De fyra årstiderna) som ofta förekommer idag inom populärkultur.
                         Vivaldi utvecklade konstformen för soloinstrument och orkester. Han var en av senbarockens mest betydelsefulla kompositörer, inte bara under sin egen livstid utan än idag.  
                         
@@ -202,29 +202,31 @@
                     <div class="tom"></div>
                 </div>
 
+                
+
                 <div class="tomHöger"></div>
 
-                <div class="GeorgHändelBild">
-                    <div class="bildHänd" id="bildHändButton"></div><!--Georg Friedrich Händel Bild-->
-                    <div class="textNameH">Georg<br>Friedrich<br>Händel</div> <!--Georg Friedrich Händel Namn-->
-                    <div class="tom"></div> <!--Georg Friedrich Händel Streck-->
+                <div class="OrlandodiLassoBild">
+                    <div class="bildLas" id="bildLasButton"></div><!--OrlandodiLasso Bild-->
+                    <div class="textNameH">Orlando<br>di<br>Lasso</div> <!--OrlandodiLassoBild Namn-->
+                    <div class="tom"></div> <!--OrlandodiLasso Streck-->
                 </div>
 
-                <div class="GeorgHändelStreck">
+                <div class="OrlandoStreck">
                     <div>
                         <p class="streckV">____________________________</p>
-                        <p class="årtalV">1685-1759</p>
-                    </div> <!--Georg Friedrich Händel Streck-->
+                        <p class="årtalV">1532–1594</p>
+                    </div> <!--Orlando di Lasso Streck-->
                 </div>
 
 
 
-                <div class="bachText">
-                    <div id="mp3ButtonBach" onclick="togglePlayBach() ">
-                        <img id="playPauseIconBach" src="img/start.png" alt="Start">
+                <div class="WilliamByrdText">
+                    <div id="mp3ButtonByr" onclick="togglePlayByr() ">
+                        <img id="playPauseIconByr" src="img/start.png" alt="Start">
                     </div>
                     <div>
-                        <p class="textBach" style="display: none">Bach, född 1685 i Eisenach, var en tysk organist och kompositör och en centralgestalt i den protestantiska kyrkomusiken. Han har både skrivit verk för olika kristna högtider och tre passioner, Matteus, Markus och Johannes. Inom orgelmusik var han bland de främsta, även idag har Bachs musik ett starkt inflytande över organister. Under sin livstid hade han en ovanligt internationell utblick. Känd för verk som Brandenburgkonserterna, Das Wohltemperierte Klavier, Orkestersvit Nr:3 Air och Toccata och fuga i d-moll.</p>
+                        <p class="textByr" style="display: none">Bach, född 1685 i Eisenach, var en tysk organist och kompositör och en centralgestalt i den protestantiska kyrkomusiken. Han har både skrivit verk för olika kristna högtider och tre passioner, Matteus, Markus och Talannes. Inom orgelmusik var han bland de främsta, även idag har Bachs musik ett starkt inflytande över organister. Under sin livstid hade han en ovanligt internationell utblick. Känd för verk som Brandenburgkonserterna, Das Wohltemperierte Klavier, Orkestersvit Nr:3 Air och Toccata och fuga i d-moll.</p>
                     </div>
                     <div class="tom"></div>
                 </div>

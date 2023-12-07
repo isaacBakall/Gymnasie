@@ -35,7 +35,7 @@ html, body {
 
 /*________________________________renässansen_____________________________________________________________*/
 
-.JosquinDesPrezBild
+.JosquinDesPrezBild, .PalestrinaBild, .ThomasTallisBild, .ByrdBild, .GuillaumeDufayBild, .OrlandodiLassoBild
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -44,20 +44,20 @@ html, body {
     
 }
 
-.JosquinDesPrezText{
+.ThomasTallisText, .OrlandodiLassoText, .GuillaumeDufayText{
     display: grid;
     grid-template-columns: 100px 2fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 0;
 }
-.PalestrinaText  {
+.PalestrinaText, .WilliamByrdText, .JosquinDesPrezText{
     display: grid;
     grid-template-columns: 1fr 2fr 100px;
     grid-template-rows: 1fr;
     grid-gap: 0;
     
 }
-.bildJos, .bildPal {
+.bildJos, .bildPal, .bildTal, .bildByr, .bildDuf, .bildLas {
     background-size: cover;
     width: 15em;
     height: 15em;
@@ -71,13 +71,13 @@ html, body {
     overflow: hidden;
 } 
 
-.bildJos:hover, .bildPal:hover{
+.bildJos:hover, .bildPal:hover, .bildTal:hover, .bildByr:hover, .bildDuf:hover, .bildLas:hover{
     transition: 0.5s ease;
     transform: scale(1.10);
     border: 5px solid white;
 } 
 
-.textJos{
+.textJos, .textPal, .textTal, .textByr, .textDuf, .textLas{
     font-size: 25px;
     place-self: center;
     font-weight: bold;
@@ -92,6 +92,26 @@ html, body {
     background-image: url('./img/Josquin.png');
 }
 
+.bildPal{
+    background-image: url('./img/Pal.png');
+    background-position: 60% center;
+}
+.bildTal{
+    background-image: url('./img/Thomas_Tallis.png');
+    background-position: 70%;
+}
+.bildByr{
+    background-image: url('./img/Byrd.png');
+    background-position: 60% center;
+}
+.bildDuf{
+    background-image: url('./img/duf.png');
+    background-position: 60% center;
+}
+.bildLas{
+    background-image: url('./img/las.png');
+    background-position: 60% center;
+}
 /*-----------------------------------BARQUE-------------------------------------------------------------*/
 
  .JanPietersBild, .Johann_Pachelbel, .Vivaldibild, .BachBild, .GeorgHändelBild, .ArrangeloCorelliBild
