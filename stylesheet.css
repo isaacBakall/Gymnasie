@@ -17,7 +17,14 @@ html, body {
     grid-gap: 0;
 }
 .timeline { /*timeline in the middle*/
-    background-color: rgb(82, 82, 83);
+    background-color: #690101;;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .timeline-bar { /*timeline in the middle*/
+    background-color: #005a6a;;
     height: 100%;
     display: flex;
     align-items: center;
@@ -34,9 +41,21 @@ html, body {
 
 
 /*________________________________renässansen_____________________________________________________________*/
-.background-ren{
-    
-}
+.background-bar { /*background for barrock*/
+    --s: 50px;
+    --c: #09333d;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%,#052831 68% 70%,#0000 72%;
+    background: 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+        repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+        radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+    background-attachment: fixed;}
+
 .JosquinDesPrezBild, .PalestrinaBild, .ThomasTallisBild, .ByrdBild, .GuillaumeDufayBild, .OrlandodiLassoBild
 {
     display: grid;
@@ -187,12 +206,12 @@ html, body {
 
 
 
-  .background-bar { /*background for barrock*/
+  .background-ren { /*background for barrock*/
     --s: 50px;
-    --c: #191b22;
+    --c: #3d0909;
     --_s: calc(2*var(--s)) calc(2*var(--s));
     --_g: 35.36% 35.36% at;
-    --_c: #0000 66%,#20222a 68% 70%,#0000 72%;
+    --_c: #0000 66%,#310505 68% 70%,#0000 72%;
     background: 
         radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
         radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
@@ -309,8 +328,14 @@ html, body {
     background-color: #800000;
     padding: 10px;
   }
+  .navbar-bar {
+    display: flex;
+    flex-direction: column;
+    background-color: #006d80;
+    padding: 10px;
+  }
 
-  .navbar p {
+  .navbar p, .navbar-bar p {
     margin: 0;
     color: black;
     font-size: 150px;
