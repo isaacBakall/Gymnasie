@@ -34,7 +34,9 @@ html, body {
 
 
 /*________________________________renässansen_____________________________________________________________*/
-
+.background-ren{
+    
+}
 .JosquinDesPrezBild, .PalestrinaBild, .ThomasTallisBild, .ByrdBild, .GuillaumeDufayBild, .OrlandodiLassoBild
 {
     display: grid;
@@ -185,7 +187,7 @@ html, body {
 
 
 
-  .background { /*background for barrock*/
+  .background-bar { /*background for barrock*/
     --s: 50px;
     --c: #191b22;
     --_s: calc(2*var(--s)) calc(2*var(--s));
@@ -229,17 +231,8 @@ html, body {
     text-align: justify;
 }
 
-.textJan, .textPachelbel{
-    margin-left: 3rem;
-    height: 100px;
-}
-.textPachelbel{
-    margin-top: -10rem;
-}
 
-.soundJan {
-    margin-top: 100px;
-}
+
 
 
 .streckV{
@@ -313,16 +306,16 @@ html, body {
 .navbar {
     display: flex;
     flex-direction: column;
-    background-color: #001f1e63;
+    background-color: #800000;
     padding: 10px;
   }
 
   .navbar p {
     margin: 0;
-    color: #20222a;
+    color: black;
     font-size: 150px;
     margin-top: -40px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
     font-weight: bold;
     
 
