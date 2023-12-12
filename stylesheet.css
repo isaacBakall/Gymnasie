@@ -17,6 +17,13 @@ html, body {
     grid-gap: 0;
 }
 .timeline { /*timeline in the middle*/
+    background-color: #086901;;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .timeline-rom { /*timeline in the middle*/
     background-color: #690101;;
     height: 100%;
     display: flex;
@@ -215,10 +222,10 @@ html, body {
 
   .background-ren { /*background for ren*/
     --s: 50px;
-    --c: #3d0909;
+    --c: #193d09;
     --_s: calc(2*var(--s)) calc(2*var(--s));
     --_g: 35.36% 35.36% at;
-    --_c: #0000 66%,#310505 68% 70%,#0000 72%;
+    --_c: #0000 66%,#0e3105 68% 70%,#0000 72%;
     background: 
         radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
         radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
@@ -444,8 +451,35 @@ html, body {
     background-attachment: fixed;
 }
 /*----------WIEN-----------------*/
+/*------ROMANTIKEN----------*/
+.background-rom { /*background for ren*/
+    --s: 50px;
+    --c: #3d0909;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%,#310505 68% 70%,#0000 72%;
+    background: 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+        repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+        radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+    background-attachment: fixed;
+}
+
+/*------ROMANTIKEN----------*/
+
+
+
 /*--------------NAVBAR------------------*/
 .navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #208000;
+    padding: 10px;
+  }
+  .navbar-rom {
     display: flex;
     flex-direction: column;
     background-color: #800000;
@@ -464,7 +498,7 @@ html, body {
     padding: 10px;
   }
 
-  .navbar p, .navbar-bar p, .navbar-wien p  {
+  .navbar p, .navbar-bar p, .navbar-wien p, .navbar-rom p  {
     margin: 0;
     color: black;
     font-size: 150px;

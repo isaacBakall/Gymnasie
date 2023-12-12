@@ -5,155 +5,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
 
     <title>Klassisk musik</title>
 
     <style>
-        #mp3ButtonJan,
-        #mp3ButtonPachelbel,
-        #mp3ButtonAlbinoni,
-        #mp3ButtonVivaldi,
-        #mp3ButtonBach,
-        #mp3ButtonHänd,
-        #mp3ButtonCore {
+        #mp3ButtonChr,
+        #mp3ButtonHay,
+        #mp3ButtonMuz,
+        #mp3ButtonWof,
+        #mp3ButtonMar,
+        #mp3ButtonLud{
             display: none;
             align-items: center;
             justify-content: center;
             padding: 10px;
             cursor: pointer;
+            
         }
+        
 
-        #mp3ButtonJan img,
-        #mp3ButtonPachelbel img,
-        #mp3ButtonAlbinoni img,
-        #mp3ButtonVivaldi img,
-        #mp3ButtonBach img,
-        #mp3ButtonHänd img,
-        #mp3ButtonCore img {
+        #mp3ButtonChr img,
+        #mp3ButtonHay img,
+        #mp3ButtonMuz img,
+        #mp3ButtonWof img,
+        #mp3ButtonMar img,
+        #mp3ButtonLud img{
             width: 100px;
             height: 100px;
         }
+        #mp3ButtonChr img:hover,
+        #mp3ButtonHay img:hover,
+        #mp3ButtonMuz img:hover,
+        #mp3ButtonWof img:hover,
+        #mp3ButtonMar img:hover,
+        #mp3ButtonLud img:hover{
+        filter: brightness(50%);
+        }
+
     </style>
 
 </head>
 
 <body>
-    <div class="background">
+    <div class="navbar-rom">
+        <a href="main.html" class="top-left">
+            <img class="logo" src="./img/logo.png" alt="Hem">
+          </a>
+        <div class="links-row">
+          <a href="Bar.html">
+            <img class="arrow" src="./img/arrow.png" alt="pil">
+          </a>
+          <p>Wienklassicismen</p>
+          <a href="Rom.html"><img class="arrowRight" src="./img/arrow.png" alt="pil"></a>
+        </div>
+      </div>
+    <div class="background-rom">
         <section class="grid-time">
             <div class="leftColumn">
-                <div class="JanPietersText">
+                <div class="ChristophWillibaldvonGluckText">
+                    <div class="tom"></div>
 
-                    <div class="textJan" style="display: none">Sweelinck, född 1562 i Deventer, var en nederlänsk
-                        kompositör som anses var den som inledde musikepoken barocken. Främst känd för sina orgel och
-                        klaververk men även för sitt förfinande av kontrapunkten, ett samling verktyg som används för
-                        att få självständiga stämmor att hänga ihop. 1960 döptes en asteroid efter honom, 7621 Sweelinck
+                    <div class="textChr" style="display: none">Gluck, född 1714, i Bayern, var en tysk tonsättare inom den tidiga Wienklassicismen/övergångsperioden från barocken. Christoph debuterade 1741 på Teatro Regio Ducale, i Milano, med sin första opera Artaserse. Operan gav han anseende så att han fick sju beställningar på nya operor. Glucks konstnärliga höjdpunkt anses utgöras av de tre reformoperorna: Orfeus och Eurydike (1762), Alceste (1767) och Paride ed Elena (1770). Här ändrade han i operaformen och lät orkestern och kören få mer utrymme, därav reformen. Glucks sista opera Echo Et Narcisse blev ett fiasko. Gluck träffade Mozart flera gånger under sina resor och komponerade drygt 50 operor, även mässor, baletter och klaververk. Hans reformoperor la grunden till ändringen som skulle komma i operor till långt inpå 1800-talet.
                     </div>
-                    <div id="mp3ButtonJan" onclick="togglePlayJan()">
-                        <img id="playPauseIconJan" src="img/start.png" alt="Start">
+                    <div id="mp3ButtonChr" onclick="togglePlayChr()">
+                        <img id="playPauseIconChr" src="img/start.png" alt="Start">
                     </div>
                 </div>
 
                 <div class="tomVänster"></div>
 
-                <div class="ArrangeloCorelliBild">
+                <div class="JosephHaydnBild">
                     <div class="tom"></div>
-                    <div class="textName">Arrangelo Corelli</div> <!--Arrangelo Corelli Namn-->
-                    <div class="bildCore" id="bildCoreButton"></div> <!--Arrangelo Corelli Bild-->
+                    <div class="textNameV">Joseph<br>Haydn</div> <!--Joseph Haydn-->
+                    <div class="bildHay" id="bildHayButton"></div> <!--Joseph Haydn Bild-->
                 </div>
 
 
-                <div class="Arrangelo_Corelli_streck">
+                <div class="Joseph_Haydn_streck">
 
                     <div class="streckH">
                         <p>
-                        <div class="årtalH">1653-1713</div>____________________________</p>
-                    </div> <!--Arrangelo Corelli streck-->
+                        <div class="årtalH">1732-1809</div>____________________________</p>
+                    </div> <!--Joseph Haydn streck-->
                 </div>
 
-                <div class="JohannPachelbelText">
-                    <div class="textPachelbel" style="display: none">
-                        Pachelbel, född 1653 i Nürnberg, var en tysk kompositör och en av sin tids främsta organister. Mest känd för sitt stycke kanon i D-dur som även idag ofta förekommer inom populärkultur. Han var en stor förebild och inspiration till Johann Sebastian Bach och enligt Bachs son, Carl Philipp Emanuel Bach, den kompositör som Bach beundrade mest. Han skrev musik i många genrer bland annat, kyrkomusik, klaververk och sånger.
+                <div class="MuzioClementiText">
+                    <div class="tom"></div>
+                    <div class="textMuz" style="display: none">
+                        Clementi, född i Rom, var en italiensk pianist och tonsättare.
+                        Mest känd idag för sina sonatiner som bidragit till utvecklingen av sonatformen och sin etydkomposition som än idag används i pianoundervisning. Under sin livstid ses Clementi som en av de största piano virtuoserna, speciellt i svårigheter som snabba ters och oktavgångar. Den italienske tonsättaren hade en legendarisk musikalisk duell med Mozart i Wien 1781 som deklarerades oavgjord av domarna. Clementi var tidigare kallad fadern av pianot för sina bidrag till den tidiga pianoteknik-utvecklingen.
+
                     </div>
-                    <div id="mp3ButtonPachelbel" onclick="togglePlayPachelbel()">
-                        <img id="playPauseIconPachelbel" src="img/start.png" alt="Start">
+                    <div id="mp3ButtonMuz" onclick="togglePlayMuz()">
+                        <img id="playPauseIconMuz" src="img/start.png" alt="Start">
                     </div>
                 </div>
 
                 <div class="tomVänster"></div>
 
 
-                <div class="Vivaldibild">
+                <div class="WolfgangAmadeusMozartBild">
                     <div class="tom"></div>
-                    <div class="textName">Antonio Vivaldi</div> <!--Antonio Vivaldi Namn-->
-                    <div class="bildViv" id="bildVivaldiButton"></div> <!--Antonio Vivaldi Bild-->
+                    <div class="textNameV">Wolfgang<br>Amadeus<br>Mozart</div> <!--WolfgangAmadeusMozart Namn-->
+                    <div class="bildWof" id="bildWofButton"></div> <!--WolfgangAmadeusMozartBild-->
                 </div>
 
-                <div class="Vivaldi_streck">
+                <div class="WolfgangAmadeusMozartstreck">
 
                     <div class="streckH">
                         <p>
-                        <div class="årtalH">1678-1741</div>____________________________</p>
-                    </div> <!--Vivaldi streck-->
+                        <div class="årtalH">1756-1791</div>____________________________</p>
+                    </div> <!--Wolfgang streck-->
                 </div>
 
 
 
 
-                <div class="GeorgHändelText">
+                <div class="JosephMartinKrausText">
                     <div class="tom"></div>
-
-                    <div class="textHänd" style="display: none">
-                        Johann Pachelbel was a prolific composer and his body of work includes both sacred and secular
-                        music.
+                    <div class="textMar" style="display: none">
+                        Kraus, född 1756 i Miltenberg, var en tysk-svensk tonsättare som är begravd i sveriges Kungliga nationalstadsparken. Den unge Kraus studerade juridik och filosofi men studerade samtidigt musik och komponerade, vilket var hans riktiga passion. På en resa genom Europa i syfte att förkovra sig musikaliskt, på bekostnad av svenska kungen (Gustav III), träffade Kraus Haydn, Gluck och möjligen även Mozart. Kraus skrev musik på uppdrag av kungen bland annat Riksdagsmusiken, en marsch till öppnandet av den svenska riksdagen. Kraus har ibland kallats “den svenske Mozart” och Han var god vän med Carl Michael Bellman.
                     </div>
 
-                    <div id="mp3ButtonHänd" onclick="togglePlayHänd()">
-                        <img id="playPauseIconHänd" src="img/start.png" alt="Start">
+                    <div id="mp3ButtonMar" onclick="togglePlayMar()">
+                        <img id="playPauseIconMar" src="img/start.png" alt="Start">
                     </div>
             
                 </div>
 
                 <div class="tomVänster"></div>
 
-                <div class="BachBild">
+                <div class="LudvigVanBeethovenBild">
                     <div class="tom"></div>
-                    <div class="textName">Johann Sebastian Bach</div> <!--Johann Sebastian Bach Namn-->
-                    <div class="bildBach" id="bildBachButton"></div> <!--Johann Sebastian Bach Bild-->
+                    <div class="textNameV">Ludvig<br>Van<br>Beethoven</div> <!--LudvigVanBeethoven Namn-->
+                    <div class="bildLud" id="bildLudButton"></div> <!--LudvigVanBeethoven Bild-->
                 </div>
 
-                <div class="streckBach">
+                <div class="streckLudvig">
                     <div class="streckH">
                         <p>
-                        <div class="årtalH">1685-1750</div>____________________________</p>
-                    </div> <!--Bach Streck-->
+                        <div class="årtalH">1770-1827</div>____________________________</p>
+                    </div> <!--LudvigVanBeethoven Streck-->
                 </div>
             </div>
 
-            <div class="timeline">
+            <div class="timeline-rom">
                 <div class="line"></div>
             </div>
 
             <div class="rightColumn">
-                <div class="JanPietersBild">
-                    <div class="bildJan" id="bildJanButton"></div> <!--Jan Pieterszoon Bild-->
-                    <div class="textName">Jan Pieterszoon Sweelinck</div> <!--Jan Pierters Namn-->
+                <div class="ChristophWillibaldvonGluckBild">
+                    <div class="bildChr" id="bildChrButton"></div> <!--Christoph Willibald von Gluck Bild-->
+                    <div class="textNameH">Christoph<br>Willibald<br>von Gluck</div> <!--Christoph Willibald von GluckNamn-->
                     <div class="tom"></div>
                 </div>
 
                 <div class="streckJan">
                     <div>
                         <p class="streckV">____________________________</p>
-                        <p class="årtalV">1562-1621</p>
-                    </div> <!--Jan Pierters Namn-->
+                        <p class="årtalV">1714-1787</p>
+                    </div> <!--Christoph Willibald von Gluck-->
                 </div>
 
-                <div class="ArrangeloCorelliText">
-                    <div id="mp3ButtonCore" onclick="togglePlayCore()">
+                <div class="JosephHaydnText">
+                    
+                    <div id="mp3ButtonHay" onclick="togglePlayHay()">
                         <img id="playPauseIconCore" src="img/start.png" alt="Start">
                     </div>
-                    <div class="textCore" style="display: none">
-                        Johann Pachelbel was a prolific composer and his body of work includes both sacred and secular
-                        music.
+                    <div class="textHay" style="display: none">
+                        Haydn, född 1732 i Rohrau, var en österrikisk kompositör som anses vara en av wienklassicismens största. Joseph var bland de första tonsättarna som fullbordade sonatformen och han hjälpte till i etableringen av kvartett- och symfoni formen.
+                        Bland Haydns mest förekommande verk är Londonsymfonierna. Josephs 12 sista symfonier. Men det kändaste verket brukar anses vara Gott erhalte Franz den Kaiser, en folkymn med Haydns musik, som var Österrikes nationalsång fram till 1919 och än idag är Tysklands nationalsång, sedan 1922, med ändrad text. 
+
+
                     </div>
                     <div class="tom"></div>
 
@@ -162,27 +188,27 @@
 
                 <div class="tomHöger"></div>
 
-                <div class="Johann_Pachelbel">
-                    <div class="bildJoh" id="bildPachelbelButton"></div> <!--Johann Pachelbel Bild-->
-                    <div class="textName">Johann Pachelbel</div> <!--Johann Pachelbel Namn-->
-                    <div class="tom"></div> <!--Tomaso Albinoni Streck-->
+                <div class="MuzioClementiBild">
+                    <div class="bildMuz" id="bildMuzButton"></div> <!--Muzio Clementi Bild-->
+                    <div class="textNameH">Muzio<br>Clementi</div> <!--Muzio Clementi Namn-->
+                    <div class="tom"></div> 
                 </div>
-                <div class="PachelbelStreck">
+                <div class="ClementiStreck">
                     <div>
                         <p class="streckV">____________________________</p>
-                        <p class="årtalV">1653-1706</p>
-                    </div> <!--Johann Pachelbel Streck-->
+                        <p class="årtalV">1752-1832</p>
+                    </div> <!--Muzio Clementi Streck-->
                 </div>
 
 
-                <div class="AntonioVivaldiText">
-                    <div id="mp3ButtonVivaldi" onclick="togglePlayVivaldi()">
-                        <img id="playPauseIconVivaldi" src="img/start.png" alt="Start">
+                <div class="WolfgangAmadeusMozartText">
+                    <div id="mp3ButtonWof" onclick="togglePlayWof()">
+                        <img id="playPauseIconWof" src="img/start.png" alt="Start">
                     </div>
 
-                    <div class="textVivaldi" style="display: none">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
+                    <div class="textWof" style="display: none">
+                        Mozart, född 1756 i Salzburg, var en (på den tiden tillhörde Salzburg, Tyskland) tysk tonsättare, violinist och pianist vars namn än idag är ett av de största och mest betydande inom hela musikhistorien. Han var olik sina samtida kompositörer då han skrev i alla stora musikgenrer, och gjorde bra av sig i varenda en.Vid 3 års ålder började Mozart spela cembalo och hans talang var anmärkningsvärd, redan vid 8 skrev den unge Wolfgang sin första symfoni. Under ett liv på 35 år kom Mozarts verklista att omfatta 626 verk, bland annat: symfonier, sonater, pianokonserter, violinkonserter och massor mer. Wolfgangs påverkan på musik kan inte underskridas.
+                        
                     </div>
 
                     <div class="tom"></div>
@@ -190,29 +216,31 @@
 
                 <div class="tomHöger"></div>
 
-                <div class="GeorgHändelBild">
-                    <div class="bildHänd" id="bildHändButton"></div><!--Georg Friedrich Händel Bild-->
-                    <div class="textName">Georg Friedrich Händel</div> <!--Georg Friedrich Händel Namn-->
-                    <div class="tom"></div> <!--Georg Friedrich Händel Streck-->
+                <div class="JosephMartinKrausBild">
+                    <div class="bildMar" id="bildMarButton"></div><!--JosephMartinKrausBild Bild-->
+                    <div class="textNameH">Joseph<br>Martin<br>Kraus</div> <!--JosephMartinKraus Namn-->
+                    <div class="tom"></div>
                 </div>
 
-                <div class="GeorgHändelStreck">
+                <div class="JosephMartinStreck">
                     <div>
                         <p class="streckV">____________________________</p>
-                        <p class="årtalV">1685-1759</p>
-                    </div> <!--Georg Friedrich Händel Streck-->
+                        <p class="årtalV">1756-1792</p>
+                    </div> <!--JosephMartinKraus Streck-->
                 </div>
 
 
 
-                <div class="bachText">
-                    <div id="mp3ButtonBach" onclick="togglePlayBach() ">
-                        <img id="playPauseIconBach" src="img/start.png" alt="Start">
+                <div class="LudvigVanBeethovenText">
+                    <div id="mp3ButtonLud" onclick="togglePlayLud() ">
+                        <img id="playPauseIconLud" src="img/start.png" alt="Start">
                     </div>
                     <div>
-                        <p class="textBach" style="display: none">Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Repellendus pariatur maiores ex quo eligendi, quaerat, quam voluptatibus cumque non
-                            excepturi dicta odit eveniet facere illum rem veniam fugiat ipsam sit?</p>
+                        <p class="textLud" style="display: none">
+                            Beethoven, född 1770 i Bonn, var en tysk pianist och tonsättare som     främst bidrog till den klassicistiska traditionen, men även senare till övergången till romantiken. 
+                            En av de mest inflytelserika kompositörerna genom tiderna och även ofta ansedd som den främsta kompositören någonsin. Beethovens verk fortsatte från grunden Mozart och Haydn lagt och kom att dominera resten av musikepoken. Hans nyfikenhet och innovativitet utvidgade musikformer som sonaten, symfonin, konserter och kvartetter.  
+                            FATTAS TEXT
+                            </p>
                     </div>
                     <div class="tom"></div>
                 </div>
@@ -224,7 +252,7 @@
             </div>
         </section>
     </div>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="wien.js"></script>
 </body>
 
 </html>
