@@ -30,6 +30,13 @@ html, body {
     align-items: center;
     justify-content: center;
   }
+  .timeline-wien { /*timeline in the middle*/
+    background-color: #b07d16;;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
   .line{ /*line inside of the timeline*/
     width: 2px;
@@ -206,7 +213,7 @@ html, body {
 
 
 
-  .background-ren { /*background for barrock*/
+  .background-ren { /*background for ren*/
     --s: 50px;
     --c: #3d0909;
     --_s: calc(2*var(--s)) calc(2*var(--s));
@@ -321,6 +328,122 @@ html, body {
     margin-top: 150px;
     margin-left: 333px;
 }
+/*-------Barque---------*/
+
+/*------WIEN----------*/
+
+.ChristophWillibaldvonGluckBild, .JosephHaydnBild, .MuzioClementiBild, .WolfgangAmadeusMozartBild, .JosephMartinKrausBild, .LudvigVanBeethovenBild
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+    
+}
+
+.ChristophWillibaldvonGluckText, .MuzioClementiText, .JosephMartinKrausText{
+    display: grid;
+    grid-template-columns: 100px 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+}
+.JosephHaydnText, .WolfgangAmadeusMozartText, .LudvigVanBeethovenText{
+    display: grid;
+    grid-template-columns: 1fr 2fr 100px;
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+    
+}
+.bildHay, .bildWof, .bildLud, .bildChr, .bildMuz, .bildMar {
+    background-size: cover;
+    width: 15em;
+    height: 15em;
+    background-repeat: no-repeat;
+    background-position: center top right;
+    cursor: pointer;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-top: 5%;
+    margin-left: 5%;
+    overflow: hidden;
+} 
+
+.bildHay:hover, .bildWof:hover, .bildChr:hover, .bildMuz:hover, .bildMar:hover, .bildLud:hover{
+    transition: 0.5s ease;
+    transform: scale(1.10);
+    border: 5px solid white;
+} 
+
+.textHay, .textWof, .textLud, .textChr, .textMuz, .textMar{
+    font-size: 25px;
+    place-self: center;
+    font-weight: bold;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+
+
+.bildHay{
+    background-image: url('./img/hay.png');
+    background-position:  center;
+}
+
+.bildWof{
+    background-image: url('./img/wof.png');
+}
+.bildLud{
+    background-image: url('./img/bet.png');
+    background-position: 40% center;
+}
+.bildChr{
+    background-image: url('./img/gluck.png');
+    background-position: 70% center;
+}
+.bildMuz{
+    background-image: url('./img/muz.png');
+    background-position: 50% center;
+}
+.bildMar{
+    background-image: url('./img/mar.png');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.background-wien { /*background for barrock*/
+    --s: 50px;
+    --c: #5e430d;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%,#48330a 68% 70%,#0000 72%;
+    background: 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+        repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+        radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+    background-attachment: fixed;
+}
+/*----------WIEN-----------------*/
 /*--------------NAVBAR------------------*/
 .navbar {
     display: flex;
@@ -334,8 +457,14 @@ html, body {
     background-color: #006d80;
     padding: 10px;
   }
+  .navbar-wien {
+    display: flex;
+    flex-direction: column;
+    background-color: #CD9119;
+    padding: 10px;
+  }
 
-  .navbar p, .navbar-bar p {
+  .navbar p, .navbar-bar p, .navbar-wien p  {
     margin: 0;
     color: black;
     font-size: 150px;
