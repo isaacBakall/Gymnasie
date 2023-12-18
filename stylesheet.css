@@ -1,4 +1,4 @@
-html, body {
+html, body{
     margin: 0;
     padding: 0;
 }
@@ -39,6 +39,13 @@ html, body {
   }
   .timeline-wien { /*timeline in the middle*/
     background-color: #b07d16;;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .timeline-mod { /*timeline in the middle*/
+    background-color: #61440b;;
     height: 100%;
     display: flex;
     align-items: center;
@@ -114,7 +121,7 @@ html, body {
 
 .textJos, .textPal, .textTal, .textByr, .textDuf, .textLas{
     font-size: 25px;
-    place-self: center;
+    
     font-weight: bold;
     color: white;
     font-family: 'Times New Roman', Times, serif;
@@ -257,7 +264,6 @@ html, body {
 
 .textJan, .textCore, .textPachelbel, .textVivaldi, .textHänd, .textBach{
     font-size: 25px;
-    place-self: center;
     font-weight: bold;
     color: white;
     font-family: 'Times New Roman', Times, serif;
@@ -470,7 +476,21 @@ html, body {
 
 /*------ROMANTIKEN----------*/
 
-
+.background-mod { /*background for barrock*/
+    --s: 50px;
+    --c: #443009;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%,#362608 68% 70%,#0000 72%;
+    background: 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+        repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+        radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+    background-attachment: fixed;
+}
 
 /*--------------NAVBAR------------------*/
 .navbar {
@@ -498,7 +518,14 @@ html, body {
     padding: 10px;
   }
 
-  .navbar p, .navbar-bar p, .navbar-wien p, .navbar-rom p  {
+  .navbar-mod{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(121, 86, 16);
+    padding: 10px;
+  }
+  
+  .navbar p, .navbar-bar p, .navbar-wien p, .navbar-rom p, .navbar-mod p  {
     margin: 0;
     color: black;
     font-size: 150px;
