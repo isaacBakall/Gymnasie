@@ -17,7 +17,7 @@ html, body{
     grid-gap: 0;
 }
 .timeline { /*timeline in the middle*/
-    background-color: #086901;;
+    background-color: #054800;;
     height: 100%;
     display: flex;
     align-items: center;
@@ -496,7 +496,7 @@ html, body{
 .navbar {
     display: flex;
     flex-direction: column;
-    background-color: #208000;
+    background-color: #1b6a00;
     padding: 10px;
   }
   .navbar-rom {
