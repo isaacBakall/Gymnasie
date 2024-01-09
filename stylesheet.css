@@ -422,8 +422,99 @@ html, body{
     background-image: url('./img/mar.png');
 }
 
+/*________________________________romantiken_____________________________________________________________*/
+.background-bar { /*background for romantiken*/
+    --s: 50px;
+    --c: #09333d;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%,#052831 68% 70%,#0000 72%;
+    background: 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+        repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+        radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+    background-attachment: fixed;}
+
+.FranzSchubertBild, .FredericChopinBild, .CamilleSaintSaënsBild, .PjotrIljitjTjajkovskijBild, .EdvardGriegBild, .SergejRachmaninovBild
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+    
+}
+
+.FranzSchubertText, .FredericChopinText, .CamilleSaintSaënsText{
+    display: grid;
+    grid-template-columns: 100px 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+}
+.PjotrIljitjTjajkovskijText, .EdvardGriegText, .SergejRachmaninovText{
+    display: grid;
+    grid-template-columns: 1fr 2fr 100px;
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+    
+}
+.bildJos, .bildPal, .bildTal, .bildByr, .bildDuf, .bildLas {
+    background-size: cover;
+    width: 15em;
+    height: 15em;
+    background-repeat: no-repeat;
+    background-position: center top right;
+    cursor: pointer;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-top: 5%;
+    margin-left: 5%;
+    overflow: hidden;
+} 
+
+.bildJos:hover, .bildPal:hover, .bildTal:hover, .bildByr:hover, .bildDuf:hover, .bildLas:hover{
+    transition: 0.5s ease;
+    transform: scale(1.10);
+    border: 5px solid white;
+} 
+
+.textJos, .textPal, .textTal, .textByr, .textDuf, .textLas{
+    font-size: 25px;
+    
+    font-weight: bold;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
 
 
+
+.bildJos{
+    background-image: url('./img/Josquin.png');
+}
+
+.bildPal{
+    background-image: url('./img/Pal.png');
+    background-position: 60% center;
+}
+.bildTal{
+    background-image: url('./img/Thomas_Tallis.png');
+    background-position: 70%;
+}
+.bildByr{
+    background-image: url('./img/Byrd.png');
+    background-position: 60% center;
+}
+.bildDuf{
+    background-image: url('./img/duf.png');
+    background-position: 60% center;
+}
+.bildLas{
+    background-image: url('./img/las.png');
+    background-position: 60% center;
+}
 
 
 
