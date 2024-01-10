@@ -35,7 +35,7 @@ function togglePlay(mp3Person, playPauseIconPerson) {
            
            
 // Code for Franz Schubert
-let audioFra = new Audio('sound/Schubert - _Ständchen_ D957.mp3');
+let audioFra = new Audio('./sound/Schubert - _Ständchen_ D957.mp3');
 let isPlayingFra = false;
 let playPauseIconFra = document.getElementById('playPauseIconFra');
 let mp3ButtonFra = document.getElementById('mp3ButtonFra');
@@ -51,7 +51,7 @@ document.getElementById('bildFraButton').addEventListener('click', function () {
 });
 
 // Code for Frederic Chopin 
-let audioFre = new Audio('sound/Chopin - Ballade No.1 in G minor, Op.23 (Krystian Zimerman).mp3');
+let audioFre = new Audio('./sound/Chopin - Ballade No.1 in G minor, Op.23 (Krystian Zimerman).mp3');
 let isPlayingFre = false;
 let playPauseIconFre = document.getElementById('playPauseIconFre');
 let mp3ButtonFre = document.getElementById('mp3ButtonFre');
@@ -67,7 +67,7 @@ document.getElementById('bildFreButton').addEventListener('click', function () {
 });
 
 // Code for Camille Saint-Saëns
-let audioCam = new Audio('sound/Camille Saint-Saëns - Danse Macabre.mp3');
+let audioCam = new Audio('./sound/Camille Saint-Saëns - Danse Macabre.mp3');
 let isPlayingCam = false;
 let playPauseIconCam = document.getElementById('playPauseIconCam');
 let mp3ButtonCam = document.getElementById('mp3ButtonCam');
@@ -83,7 +83,7 @@ document.getElementById('bildCamButton').addEventListener('click', function () {
 });
 
 // Code for Pjotr Iljitj Tjajkovskij
-let audioPjo = new Audio('sound/Tchaikovsky - Swan Lake (Swan Theme).mp3');
+let audioPjo = new Audio('./sound/Tchaikovsky - Swan Lake (Swan Theme).mp3');
 let isPlayingPjo = false;
 let playPauseIconPjo = document.getElementById('playPauseIconPjo');
 let mp3ButtonPjo = document.getElementById('mp3ButtonPjo');
@@ -100,7 +100,7 @@ document.getElementById('bildPjoButton').addEventListener('click', function () {
 
 
 // Code for Edvard Grieg
-let audioEdv = new Audio('.sound/Grieg.mp3.mp3');
+let audioEdv = new Audio('./sound/Grieg.mp3');
 let isPlayingEdv = false;
 let playPauseIconEdv = document.getElementById('playPauseIconEdv');
 let mp3ButtonEdv = document.getElementById('mp3ButtonEdv');
@@ -116,7 +116,7 @@ document.getElementById('bildEdvButton').addEventListener('click', function () {
 });
 
 // Code for Sergej Rachmaninov
-let audioSer = new Audio('.sound/Rachmaninoff_ Piano Concerto No. 1 in F-Sharp Minor, Op. 1 - I. Vivace.mp3');
+let audioSer = new Audio('./sound/Rachmaninoff_ Piano Concerto No. 1 in F-Sharp Minor, Op. 1 - I. Vivace.mp3');
 let isPlayingSer = false;
 let playPauseIconSer = document.getElementById('playPauseIconSer');
 let mp3ButtonSer = document.getElementById('mp3ButtonSer');
