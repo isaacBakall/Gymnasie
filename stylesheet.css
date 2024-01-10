@@ -513,6 +513,96 @@ html, body{
     background-position: 50% right;
 }
 
+/*________________________________modernismen_____________________________________________________________*/
+.background-bar { /*background for modernism*/
+    --s: 50px;
+    --c: #09333d;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%,#052831 68% 70%,#0000 72%;
+    background: 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+        repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+        radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+    background-attachment: fixed;}
+
+.ClaudeDebussyBild, .RichardStraussBild, .ErikSatieBild, .MauriceRavelBild, .IgorStravinskijBild, .DmitriDmitriyevichShostakovichBild
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+    
+}
+
+.ClaudeDebussyText, .RichardStraussText, .ErikSatieText{
+    display: grid;
+    grid-template-columns: 100px 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+}
+.MauriceRavelText, .IgorStravinskijText, .DmitriDmitriyevichShostakovichText{
+    display: grid;
+    grid-template-columns: 1fr 2fr 100px;
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+    
+}
+.bildCla, .bildRic, .bildEri, .bildMau, .bildIgo, .bildDmi {
+    background-size: cover;
+    width: 15em;
+    height: 15em;
+    background-repeat: no-repeat;
+    background-position: center top right;
+    cursor: pointer;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-top: 5%;
+    margin-left: 5%;
+    overflow: hidden;
+} 
+
+.bildCla:hover, .bildRic:hover, .bildEri:hover, .bildMau:hover, .bildIgo:hover, .bildDmi:hover{
+    transition: 0.5s ease;
+    transform: scale(1.10);
+    border: 5px solid white;
+} 
+
+.textCla, .textRic, .textEri, .textMau, .textIgo, .textDmi{
+    font-size: 25px;
+    
+    font-weight: bold;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+
+
+.bildCla{
+    background-image: url('./img/Debussy.png');
+}
+
+.bildRic{
+    background-image: url('img/Strauss.png');
+}
+.bildEri{
+    background-image: url('img/Satie.png');
+}
+.bildMau{
+    background-image: url('img/Ravel.png');
+    background-position: 47% center;
+}
+.bildIgo{
+    background-image: url('img/Stravinskij.png');
+}
+.bildDmi{
+    background-image: url('img/Shostakovich.png');
+    background-position: 50% right;
+}
 
 
 
