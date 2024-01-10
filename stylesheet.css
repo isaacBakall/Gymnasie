@@ -17,7 +17,7 @@ html, body{
     grid-gap: 0;
 }
 .timeline { /*timeline in the middle*/
-    background-color: #086901;;
+    background-color: #054800;;
     height: 100%;
     display: flex;
     align-items: center;
@@ -587,7 +587,7 @@ html, body{
 .navbar {
     display: flex;
     flex-direction: column;
-    background-color: #208000;
+    background-color: #1b6a00;
     padding: 10px;
   }
   .navbar-rom {
@@ -672,50 +672,8 @@ html, body{
 /*---------------MAIN-----------------*/
 
 .main {
-    --u: 20px;
-    --c1: #a29478;
-    --c2: #616c7f;
-    --c3: #414c66;
-    --gp: 50%/ calc(var(--u) * 10) calc(var(--u) * 7.8);
-    --dg: 0 25%, #fff0 0 100%;
-    --dr: from 45deg at;
-    --dl: from -135deg at;
-    --du: from -45deg at 50%;
-    --dd: from 135deg at 50%;
-    background: 
-        /*right*/
-        conic-gradient(var(--dr) 86% 62%, var(--c1) var(--dg)) var(--gp),
-        conic-gradient(var(--dr) 76% 62%, var(--c3) var(--dg)) var(--gp),
-        conic-gradient(var(--dr) 74.5% 62%, var(--c1) var(--dg)) var(--gp),
-        conic-gradient(var(--dr) 65% 62%, var(--c2) var(--dg)) var(--gp),
-        conic-gradient(var(--dr) 63.5% 62%, var(--c1) var(--dg)) var(--gp),
-        conic-gradient(var(--dr) 56% 62%, var(--c3) var(--dg)) var(--gp),
-        conic-gradient(var(--dr) 54.5% 62%, var(--c1) var(--dg)) var(--gp),
-        conic-gradient(var(--dr) 50% 62%, var(--c2) var(--dg)) var(--gp),
-        /*left*/
-        conic-gradient(var(--dl) 14% 62%, var(--c1) var(--dg)) var(--gp),
-        conic-gradient(var(--dl) 24% 62%, var(--c3) var(--dg)) var(--gp),
-        conic-gradient(var(--dl) 25.5% 62%, var(--c1) var(--dg)) var(--gp),
-        conic-gradient(var(--dl) 35% 62%, var(--c2) var(--dg)) var(--gp),
-        conic-gradient(var(--dl) 36.5% 62%, var(--c1) var(--dg)) var(--gp),
-        conic-gradient(var(--dl) 44% 62%, var(--c3) var(--dg)) var(--gp),
-        conic-gradient(var(--dl) 45.5% 62%, var(--c1) var(--dg)) var(--gp),
-        conic-gradient(var(--dl) 50% 62%, var(--c2) var(--dg)) var(--gp),
-        /*up*/
-        conic-gradient(var(--du) 19%, var(--c1) var(--dg)) var(--gp),
-        conic-gradient(var(--du) 31%, var(--c3) var(--dg)) var(--gp),
-        conic-gradient(var(--du) 33%, var(--c1) var(--dg)) var(--gp),
-        conic-gradient(var(--du) 43.5%, var(--c2) var(--dg)) var(--gp),
-        conic-gradient(var(--du) 45.5%, var(--c1) var(--dg)) var(--gp),
-        conic-gradient(var(--du) 55%, var(--c3) var(--dg)) var(--gp),
-        conic-gradient(var(--du) 57%, var(--c1) var(--dg)) var(--gp),
-        conic-gradient(var(--du) 66%, var(--c2) var(--dg)) var(--gp),
-        /*down*/
-        conic-gradient(var(--dd) 81%, var(--c1) var(--dg)) var(--gp),
-        conic-gradient(var(--dd) 69%, var(--c3) var(--dg)) var(--gp),
-        conic-gradient(var(--dd) 67%, var(--c1) var(--dg)) var(--gp),
-        conic-gradient(var(--dd) 58%, var(--c2) var(--dg)) var(--gp);
-    
+    background-color: rgba(20,18,18,255);
+
 }
 
 
@@ -838,16 +796,32 @@ html, body{
   cursor: pointer;
   
 }
+
 .renässansen:hover,
 .barocken:hover,
 .wienklassicismen:hover,
 .romantiken:hover,
 .modernismen:hover {
   transition: 0.2s;
-  box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
   border-radius: 10px;
   transform: scale(1.05);
 }
+.renässansen:hover{
+    box-shadow: 0 0 10px 5px rgba(119, 255, 0, 0.5);
+}
+.barocken:hover{
+    box-shadow: 0 0 10px 5px rgba(0, 247, 255, 0.5);
+}
+.wienklassicismen:hover{
+    box-shadow: 0 0 10px 5px rgba(251, 233, 33, 0.5);
+}
+.romantiken:hover{
+    box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
+}
+.modernismen:hover{
+    box-shadow: 0 0 10px 5px rgba(167, 120, 2, 0.5);
+}
+
 
 
 .renText, .barText, .wienText, .romText, .modText, .kvinnorText {
