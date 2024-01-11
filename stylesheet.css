@@ -18,24 +18,28 @@ html, body{
 }
 .timeline { /*timeline in the middle*/
     background-color: #054800;;
-    height: 100%;
+    height: 390vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -8.15rem;
+    
   }
   .timeline-rom { /*timeline in the middle*/
     background-color: #690101;;
-    height: 100%;
+    height: 390vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -8.15rem;
   }
   .timeline-bar { /*timeline in the middle*/
     background-color: #005a6a;;
-    height: 100%;
+    height: 390vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -8.15rem;
   }
   .timeline-wien { /*timeline in the middle*/
     background-color: #b07d16;;
@@ -46,10 +50,11 @@ html, body{
   }
   .timeline-mod { /*timeline in the middle*/
     background-color: #61440b;;
-    height: 100%;
+    height: 390vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -8.15rem;
   }
   
   .line{ /*line inside of the timeline*/
@@ -178,6 +183,18 @@ html, body{
     grid-gap: 0;
     
 }
+.ArrangeloCorelliText{
+    margin-top: -2rem;
+}
+.AntonioVivaldiText{
+    margin-top: -2rem;
+}
+.bachText{
+    margin-top: -4rem;
+}
+.GeorgHändelText{
+    margin-top: -5rem;
+}
 .bildJan, .bildCore, .bildJoh, .bildViv, .bildHänd, .bildBach {
     background-size: cover;
     width: 15em;
@@ -251,6 +268,14 @@ html, body{
     color: white;
     font-family: 'Times New Roman', Times, serif;
     margin-right: 1.5rem;
+    
+}
+.textNameV2 { /*People names*/
+    font-size: 50px;
+    text-align: left;
+    place-self: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
     
 }
 .textNameH{
@@ -447,25 +472,38 @@ html, body{
     
 }
 
-.FranzSchubertText, .FredericChopinText, .CamilleSaintSaënsText{
+.FranzSchubertText,.EdvardGriegText, .CamilleSaintSaënsText{
     display: grid;
     grid-template-columns: 100px 2fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 0;
 }
-.PjotrIljitjTjajkovskijText, .EdvardGriegText, .SergejRachmaninovText{
+.PjotrIljitjTjajkovskijText, .FredericChopinText, .SergejRachmaninovText{
     display: grid;
     grid-template-columns: 1fr 2fr 100px;
     grid-template-rows: 1fr;
     grid-gap: 0;
-    
+}
+.FranzSchubertText{
+    margin-top: -4rem;
+}
+.FredericChopinText{
+    margin-top: -4rem;
+}
+.CamilleSaintSaënsText{
+    margin-top: -4rem;
+}
+.PjotrIljitjTjajkovskijText{
+    margin-top: -6rem;
+}
+.SergejRachmaninovText{
+    margin-top: -8rem;
 }
 .bildFra, .bildFre, .bildCam, .bildPjo, .bildEdv, .bildSer {
     background-size: cover;
     width: 15em;
     height: 15em;
     background-repeat: no-repeat;
-    background-position: center top right;
     cursor: pointer;
     border-radius: 50%;
     box-sizing: border-box;
@@ -482,11 +520,10 @@ html, body{
 
 .textFra, .textFre, .textCam, .textPjo, .textEdv, .textSer{
     font-size: 25px;
-    
     font-weight: bold;
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    text-align: justify;
+    text-align: center;
 }
 
 
@@ -538,18 +575,36 @@ html, body{
     
 }
 
-.ClaudeDebussyText, .RichardStraussText, .ErikSatieText{
+.ClaudeDebussyText, .IgorStravinskijText, .ErikSatieText{
     display: grid;
     grid-template-columns: 100px 2fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 0;
 }
-.MauriceRavelText, .IgorStravinskijText, .DmitriDmitriyevichShostakovichText{
+.MauriceRavelText, .RichardStraussText, .DmitriDmitriyevichShostakovichText{
     display: grid;
     grid-template-columns: 1fr 2fr 100px;
     grid-template-rows: 1fr;
     grid-gap: 0;
     
+}
+.ClaudeDebussyText{
+    margin-top: -7rem
+}
+.RichardStraussText{
+    margin-top: -12rem
+}
+.ErikSatieText{
+    margin-top: -9rem
+}
+.MauriceRavelText{
+    margin-top: -12rem
+}
+.IgorStravinskijText{
+    margin-top: -10rem ;
+}
+.DmitriDmitriyevichShostakovichText{
+    margin-top: -14rem;
 }
 .bildCla, .bildRic, .bildEri, .bildMau, .bildIgo, .bildDmi {
     background-size: cover;
@@ -576,7 +631,7 @@ html, body{
     font-weight: bold;
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    text-align: justify;
+    text-align: center;
 }
 
 
@@ -604,7 +659,84 @@ html, body{
 }
 
 
+/*------------------------------------------Kvinnliga kompositörer-----------------------------------*/
 
+.HildegardavBingenBild, .BarbaraStrozziBild, .FannyMendelssohnBild, .ClaraSchumannBild, .EthelSmythBild, .AmyBeachnBild
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+    
+}
+
+.HildegardavBingenText, .FannyMendelssohn, .EthelSmythBildText{
+    display: grid;
+    grid-template-columns: 100px 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+}
+.BarbaraStrozziText, .ClaraSchumannText, .AmyBeachText{
+    display: grid;
+    grid-template-columns: 1fr 2fr 100px;
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+    
+}
+.bildHil, .bildBar, .bildFan, .bildCla, .bildEth, .bildAmy {
+    background-size: cover;
+    width: 15em;
+    height: 15em;
+    background-repeat: no-repeat;
+    background-position: center top right;
+    cursor: pointer;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-top: 5%;
+    margin-left: 5%;
+    overflow: hidden;
+} 
+
+.bildHil:hover, .bildBar:hover, .bildFan:hover, .bildCla:hover, .bildEth:hover, .bildLAmy:hover{
+    transition: 0.5s ease;
+    transform: scale(1.10);
+    border: 5px solid white;
+} 
+
+.textHil, .textBar, .textFan, .textCla, .textEth, .textAmy{
+    font-size: 25px;
+    place-self: center;
+    font-weight: bold;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+
+
+.bildHil{
+    background-image: url('./img/hay.png');
+    background-position:  center;
+}
+
+.bildBar{
+    background-image: url('./img/wof.png');
+}
+.bildFan{
+    background-image: url('./img/bet.png');
+    background-position: 40% center;
+}
+.bildCla{
+    background-image: url('./img/gluck.png');
+    background-position: 70% center;
+}
+.bildEth{
+    background-image: url('./img/muz.png');
+    background-position: 50% center;
+}
+.bildAmy{
+    background-image: url('./img/mar.png');
+}
 
 
 
@@ -636,6 +768,8 @@ html, body{
 /*----------WIEN-----------------*/
 /*------ROMANTIKEN----------*/
 .background-rom { /*background for ren*/
+    height: 100%;
+    margin: 0;
     --s: 50px;
     --c: #3d0909;
     --_s: calc(2*var(--s)) calc(2*var(--s));
