@@ -43,10 +43,11 @@ html, body{
   }
   .timeline-wien { /*timeline in the middle*/
     background-color: #b07d16;;
-    height: 100%;
+    height: 390vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -8.15rem;
   }
   .timeline-mod { /*timeline in the middle*/
     background-color: #61440b;;
@@ -104,6 +105,24 @@ html, body{
     grid-gap: 0;
     
 }
+.PalestrinaText{
+    margin-top: -1rem;
+}
+.WilliamByrdText{
+    margin-top: -6rem;
+}
+.OrlandodiLassoText{
+    margin-top: -4rem;
+}
+.ThomasTallisText{
+    margin-top: -4rem;
+}
+.JosquinDesPrezText{
+    margin-top: -8rem;
+}
+.GuillaumeDufayText{
+    margin-top: -4rem;
+}
 .bildJos, .bildPal, .bildTal, .bildByr, .bildDuf, .bildLas {
     background-size: cover;
     width: 15em;
@@ -130,7 +149,7 @@ html, body{
     font-weight: bold;
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    text-align: justify;
+    text-align: center;
 }
 
 
@@ -292,7 +311,7 @@ html, body{
     font-weight: bold;
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    text-align: justify;
+    text-align: center;
 }
 
 
@@ -392,6 +411,24 @@ html, body{
     grid-gap: 0;
     
 }
+.JosephHaydnText{
+    margin-top: -5rem;
+}
+.MuzioClementiText{
+    margin-top: -5rem;
+}
+.WolfgangAmadeusMozartText{
+    margin-top: -7rem;
+}
+.LudvigVanBeethovenText{
+    margin-top: -13rem;
+}
+.JosephMartinKrausText{
+    margin-top: -6rem;
+}
+.ChristophWillibaldvonGluckText{
+    margin-top: -7rem;
+}
 .bildHay, .bildWof, .bildLud, .bildChr, .bildMuz, .bildMar {
     background-size: cover;
     width: 15em;
@@ -418,7 +455,7 @@ html, body{
     font-weight: bold;
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    text-align: justify;
+    text-align: center;
 }
 
 
@@ -661,7 +698,7 @@ html, body{
 
 /*------------------------------------------Kvinnliga kompositörer-----------------------------------*/
 
-.HildegardavBingenBild, .BarbaraStrozziBild, .FannyMendelssohnBild, .ClaraSchumannBild, .EthelSmythBild, .AmyBeachnBild
+.HildegardavBingenBild, .BarbaraStrozziBild, .FannyMendelssohnBild, .ClaraSchumannBild, .EthelSmythBild, .AmyBeachBild
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -697,7 +734,7 @@ html, body{
     overflow: hidden;
 } 
 
-.bildHil:hover, .bildBar:hover, .bildFan:hover, .bildCla:hover, .bildEth:hover, .bildLAmy:hover{
+.bildHil:hover, .bildBar:hover, .bildFan:hover, .bildCla:hover, .bildEth:hover, .bildAmy:hover{
     transition: 0.5s ease;
     transform: scale(1.10);
     border: 5px solid white;
@@ -709,7 +746,7 @@ html, body{
     font-weight: bold;
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    text-align: justify;
+    text-align: center;
 }
 
 
@@ -835,6 +872,12 @@ html, body{
     background-color: rgb(121, 86, 16);
     padding: 10px;
   }
+  .navbar-kvinna{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(121, 16, 121);
+    padding: 10px;
+  }
   
   .navbar p, .navbar-bar p, .navbar-wien p, .navbar-rom p, .navbar-mod p  {
     margin: 0;
@@ -843,8 +886,14 @@ html, body{
     margin-top: -40px;
     font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
     font-weight: bold;
-    
-
+  }
+  .navbar-kvinna p{
+    margin: 0;
+    color: black;
+    font-size: 140px;
+    margin-top: -40px;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-weight: bold;
   }
 
   .navbar .top-left {
