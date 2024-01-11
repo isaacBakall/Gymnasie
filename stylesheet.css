@@ -16,46 +16,28 @@ html, body{
     grid-template-rows: repeat(12, 250px);
     grid-gap: 0;
 }
-.timeline { /*timeline in the middle*/
+.timeline, .timeline-rom, .timeline-bar, .timeline-wien, .timeline-mod{
+    height: 390vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -8.15rem;
+    z-index: -1;
+}
+.timeline { 
     background-color: #054800;;
-    height: 390vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -8.15rem;
-    
   }
-  .timeline-rom { /*timeline in the middle*/
+  .timeline-rom {
     background-color: #690101;;
-    height: 390vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -8.15rem;
   }
-  .timeline-bar { /*timeline in the middle*/
+  .timeline-bar { 
     background-color: #005a6a;;
-    height: 390vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -8.15rem;
   }
-  .timeline-wien { /*timeline in the middle*/
+  .timeline-wien { 
     background-color: #b07d16;;
-    height: 390vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -8.15rem;
   }
-  .timeline-mod { /*timeline in the middle*/
+  .timeline-mod { 
     background-color: #61440b;;
-    height: 390vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -8.15rem;
   }
   
   .line{ /*line inside of the timeline*/
@@ -864,6 +846,7 @@ html, body{
     flex-direction: column;
     background-color: #CD9119;
     padding: 10px;
+    z-index: 2;
   }
 
   .navbar-mod{
