@@ -35,7 +35,7 @@ function togglePlay(mp3Person, playPauseIconPerson) {
            
            
 // Code for Christoph Willibald von Gluck
-let audioChr = new Audio('./sound/Chrquin.mp3');
+let audioChr = new Audio('./sound/Orfeo.mp3');
 let isPlayingChr = false;
 let playPauseIconChr = document.getElementById('playPauseIconChr');
 let mp3ButtonChr = document.getElementById('mp3ButtonChr');
@@ -51,7 +51,7 @@ document.getElementById('bildChrButton').addEventListener('click', function () {
 });
 
 // Code for Joseph Haydn
-let audioHay = new Audio('./sound/Hayestrina.mp3');
+let audioHay = new Audio('./sound/Hay.mp3');
 let isPlayingHay = false;
 let playPauseIconHay = document.getElementById('playPauseIconHay');
 let mp3ButtonHay = document.getElementById('mp3ButtonHay');
@@ -67,7 +67,7 @@ document.getElementById('bildHayButton').addEventListener('click', function () {
 });
 
 // Code for Muzio Clementi
-let audioMuz = new Audio('./sound/Muz.mp3');
+let audioMuz = new Audio('./sound/Sonatina.mp3');
 let isPlayingMuz = false;
 let playPauseIconMuz = document.getElementById('playPauseIconMuz');
 let mp3ButtonMuz = document.getElementById('mp3ButtonMuz');
@@ -83,7 +83,7 @@ document.getElementById('bildMuzButton').addEventListener('click', function () {
 });
 
 // Code for Wolfgang Amadeus Mozart
-let audioWof = new Audio('./sound/Wofd.mp3');
+let audioWof = new Audio('./sound/eine.mp3');
 let isPlayingWof = false;
 let playPauseIconWof = document.getElementById('playPauseIconWof');
 let mp3ButtonWof = document.getElementById('mp3ButtonWof');

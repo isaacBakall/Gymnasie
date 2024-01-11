@@ -83,7 +83,7 @@ document.getElementById('bildCamButton').addEventListener('click', function () {
 });
 
 // Code for Pjotr Iljitj Tjajkovskij
-let audioPjo = new Audio('./sound/Tchaikovsky - Swan Lake (Swan Theme).mp3');
+let audioPjo = new Audio('./sound/Tchaikovsky.mp3');
 let isPlayingPjo = false;
 let playPauseIconPjo = document.getElementById('playPauseIconPjo');
 let mp3ButtonPjo = document.getElementById('mp3ButtonPjo');

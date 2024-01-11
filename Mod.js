@@ -67,7 +67,7 @@ document.getElementById('bildRicButton').addEventListener('click', function () {
 });
 
 // Code for Erik Satie
-let audioEri = new Audio('./sound/Eriille Saint-Saëns - Danse Macabre.mp3');
+let audioEri = new Audio('./sound/Tchaikovsky.mp3');
 let isPlayingEri = false;
 let playPauseIconEri = document.getElementById('playPauseIconEri');
 let mp3ButtonEri = document.getElementById('mp3ButtonEri');
