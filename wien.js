@@ -100,7 +100,7 @@ document.getElementById('bildWofButton').addEventListener('click', function () {
 
 
 // Code for Joseph Martin Kraus
-let audioMar = new Audio('./sound/Mar.mp3');
+let audioMar = new Audio('./sound/fishermen.mp3');
 let isPlayingMar = false;
 let playPauseIconMar = document.getElementById('playPauseIconMar');
 let mp3ButtonMar = document.getElementById('mp3ButtonMar');
@@ -116,7 +116,7 @@ document.getElementById('bildMarButton').addEventListener('click', function () {
 });
 
 // Code for Ludvig Van Beethoven
-let audioLud = new Audio('./sound/Orlando.mp3');
+let audioLud = new Audio('./sound/Symphony.mp3');
 let isPlayingLud = false;
 let playPauseIconLud = document.getElementById('playPauseIconLud');
 let mp3ButtonLud = document.getElementById('mp3ButtonLud');
