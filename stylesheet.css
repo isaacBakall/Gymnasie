@@ -22,7 +22,7 @@ html, body{
     align-items: center;
     justify-content: center;
     margin-top: -8.15rem;
-    z-index: -1;
+    z-index: -2;
 }
 .timeline { 
     background-color: #054800;;
@@ -88,16 +88,16 @@ html, body{
     
 }
 .PalestrinaText{
-    margin-top: -1rem;
+    margin-top: -8rem;
 }
 .WilliamByrdText{
-    margin-top: -6rem;
+    margin-top: -14rem;
 }
 .OrlandodiLassoText{
-    margin-top: -4rem;
+    margin-top: -8rem;
 }
 .ThomasTallisText{
-    margin-top: -4rem;
+    margin-top: -12rem;
 }
 .JosquinDesPrezText{
     margin-top: -8rem;
@@ -955,12 +955,15 @@ html, body{
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
+    filter: grayscale(100%);
+    object-position: center 18%;
 }
 .romantiken img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 5px;  
+    filter: grayscale(100%);
 }
 .modernismen img{
     width: 100%;
@@ -968,6 +971,7 @@ html, body{
     object-fit: cover;
     border-radius: 5px;
     object-position: center 12%;
+    filter: grayscale(100%);
 }
 .wienklassicismen img{
     width: 100%;
@@ -975,8 +979,15 @@ html, body{
     object-fit: cover;
     border-radius: 5px;
     object-position: 2% 10%;
+    filter: grayscale(100%);
+}
+.kvinnor img{
+    filter: grayscale(100%);
 }
 
+.kvinnor img:hover,.wienklassicismen img:hover, .modernismen img:hover, .romantiken img:hover,.renässansen img:hover, .barocken img:hover {
+    filter: grayscale(0%);
+}
 
 
 

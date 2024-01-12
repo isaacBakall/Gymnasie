@@ -35,7 +35,7 @@ function togglePlay(mp3Person, playPauseIconPerson) {
            
            
 // Code for Claude Debussy
-let audioCla = new Audio('./sound/Schubert - _Ständchen_ D957.mp3');
+let audioCla = new Audio('./sound/lune.mp3');
 let isPlayingCla = false;
 let playPauseIconCla = document.getElementById('playPauseIconCla');
 let mp3ButtonCla = document.getElementById('mp3ButtonCla');
@@ -51,7 +51,7 @@ document.getElementById('bildClaButton').addEventListener('click', function () {
 });
 
 // Code for Richard Strauss
-let audioRic = new Audio('./sound/Chopin - Ballade No.1 in G minor, Op.23 (Krystian Zimerman).mp3');
+let audioRic = new Audio('./sound/Prelude.mp3');
 let isPlayingRic = false;
 let playPauseIconRic = document.getElementById('playPauseIconRic');
 let mp3ButtonRic = document.getElementById('mp3ButtonRic');
@@ -67,7 +67,7 @@ document.getElementById('bildRicButton').addEventListener('click', function () {
 });
 
 // Code for Erik Satie
-let audioEri = new Audio('./sound/Tchaikovsky.mp3');
+let audioEri = new Audio('./sound/Gnossienne.mp3');
 let isPlayingEri = false;
 let playPauseIconEri = document.getElementById('playPauseIconEri');
 let mp3ButtonEri = document.getElementById('mp3ButtonEri');
@@ -83,7 +83,7 @@ document.getElementById('bildEriButton').addEventListener('click', function () {
 });
 
 // Code for Maurice Ravel
-let audioMau = new Audio('./sound/Tchaikovsky - Swan Lake (Swan Theme).mp3');
+let audioMau = new Audio('./sound/Ondine.mp3');
 let isPlayingMau = false;
 let playPauseIconMau = document.getElementById('playPauseIconMau');
 let mp3ButtonMau = document.getElementById('mp3ButtonMau');
@@ -100,7 +100,7 @@ document.getElementById('bildMauButton').addEventListener('click', function () {
 
 
 // Code for Igor Stravinskij
-let audioIgo = new Audio('./sound/Grieg.mp3');
+let audioIgo = new Audio('./sound/Stravinsky.mp3');
 let isPlayingIgo = false;
 let playPauseIconIgo = document.getElementById('playPauseIconIgo');
 let mp3ButtonIgo = document.getElementById('mp3ButtonIgo');
@@ -116,7 +116,7 @@ document.getElementById('bildIgoButton').addEventListener('click', function () {
 });
 
 // Code for Dmitri Dmitriyevich Shostakovich 
-let audioDmi = new Audio('./sound/Rachmaninoff_ Piano Concerto No. 1 in F-Sharp Minor, Op. 1 - I. Vivace.mp3');
+let audioDmi = new Audio('./sound/Stravinsky.mp3');
 let isPlayingDmi = false;
 let playPauseIconDmi = document.getElementById('playPauseIconDmi');
 let mp3ButtonDmi = document.getElementById('mp3ButtonDmi');
