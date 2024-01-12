@@ -27,10 +27,29 @@
                     
                     playPauseIconPerson.src = 'img/start.png';
                 } else {
+                   
+                    turnOff();
+
                     mp3Person.play();
                     playPauseIconPerson.src = 'img/pause.png';
                 }
             }
+            function turnOff() {
+                audioJan.pause();
+                audioCore.pause();
+                audioPachelbel.pause();
+                audioVivaldi.pause();
+                audioHänd.pause();
+                audioBach.pause();
+            
+                playPauseIconJan.src = 'img/start.png';
+                playPauseIconCore.src = 'img/start.png';
+                playPauseIconPachelbel.src = 'img/start.png';
+                playPauseIconVivaldi.src = 'img/start.png';
+                playPauseIconHänd.src = 'img/start.png';
+                playPauseIconBach.src = 'img/start.png';
+                        }
+            
 
             //BAR ---------------------------------------------------------------
 

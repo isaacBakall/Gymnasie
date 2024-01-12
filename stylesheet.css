@@ -979,7 +979,8 @@ html, body{
     object-fit: cover;
     border-radius: 5px;
     object-position: 2% 10%;
-    filter: grayscale(100%);
+    filter: grayscale(100%);    
+
 }
 .kvinnor img{
     filter: grayscale(100%);
@@ -987,6 +988,7 @@ html, body{
 
 .kvinnor img:hover,.wienklassicismen img:hover, .modernismen img:hover, .romantiken img:hover,.renässansen img:hover, .barocken img:hover {
     filter: grayscale(0%);
+    transition: 1000ms;
 }
 
 
@@ -1059,6 +1061,7 @@ html, body{
   height: 300px;
   border-radius: 15px;
   cursor: pointer;
+    
   
 }
 
@@ -1067,9 +1070,10 @@ html, body{
 .wienklassicismen:hover,
 .romantiken:hover,
 .modernismen:hover {
-  transition: 0.2s;
+  transition: 1s;
   border-radius: 10px;
   transform: scale(1.05);
+  
 }
 .renässansen:hover{
     box-shadow: 0 0 10px 5px rgba(119, 255, 0, 0.5);
@@ -1108,7 +1112,7 @@ html, body{
 }
 
 .kvinnor:hover {
-    transition: 0.2s;
+    transition: 1s;
     box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
     border-radius: 10px;
     transform: scale(1.05);

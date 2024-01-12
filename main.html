@@ -72,12 +72,12 @@
 
         imageElements.forEach((image, index) => {
             image.addEventListener('mouseover', () => {
-                textElements[index].style.transition = '0.2s';
+                textElements[index].style.transition = '1s';
                 textElements[index].style.transform = 'scale(1.05)';
             });
 
             image.addEventListener('mouseout', () => {
-                textElements[index].style.transition = '0.0s';
+                textElements[index].style.transition = '0.5s';
                 textElements[index].style.transform = 'scale(1)';
             });
         });
