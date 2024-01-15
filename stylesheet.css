@@ -16,7 +16,7 @@ html, body{
     grid-template-rows: repeat(12, 250px);
     grid-gap: 0;
 }
-.timeline, .timeline-rom, .timeline-bar, .timeline-wien, .timeline-mod{
+.timeline, .timeline-rom, .timeline-bar, .timeline-wien, .timeline-mod, .timeline-kvinna{
     height: 390vh;
     display: flex;
     align-items: center;
@@ -38,6 +38,9 @@ html, body{
   }
   .timeline-mod { 
     background-color: #61440b;;
+  }
+  .timeline-kvinna{
+    background-color: #2271c6;
   }
   
   .line{ /*line inside of the timeline*/
@@ -658,11 +661,11 @@ html, body{
 
 
 .bildCla{
-    background-image: url('.img/Debussy.png');
+    background-image: url('./img/Debussy.png');
 }
 
 .bildRic{
-    background-image: url('img/Strauss.png');
+    background-image: url('./img/Strauss.png');
 }
 .bildEri{
     background-image: url('img/Satie.png');
@@ -691,20 +694,28 @@ html, body{
     z-index: 2;
 }
 
-.HildegardavBingenText, .FannyMendelssohn, .EthelSmythBildText{
+.HildegardavBingenText, .FannyMendelssohnText, .EthelSmythBildText{
     display: grid;
     grid-template-columns: 100px 2fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 0;
 }
+.HildegardavBingenText{margin-top: -8rem;} 
+.FannyMendelssohnText{margin-top: -1rem;} 
+.EthelSmythBildText{margin-top: -0rem;}
+.BarbaraStrozziText{margin-top: -10rem;} 
+.ClaraSchumannText{} 
+.AmyBeachText{}
+
 .BarbaraStrozziText, .ClaraSchumannText, .AmyBeachText{
     display: grid;
     grid-template-columns: 1fr 2fr 100px;
     grid-template-rows: 1fr;
     grid-gap: 0;
+    margin-top: -20rem;
     
 }
-.bildHil, .bildBar, .bildFan, .bildCla, .bildEth, .bildAmy {
+.bildHil, .bildBar, .bildFan, .bildSch, .bildEth, .bildAmy {
     background-size: cover;
     width: 15em;
     height: 15em;
@@ -718,13 +729,13 @@ html, body{
     overflow: hidden;
 } 
 
-.bildHil:hover, .bildBar:hover, .bildFan:hover, .bildCla:hover, .bildEth:hover, .bildAmy:hover{
+.bildHil:hover, .bildBar:hover, .bildFan:hover, .bildSch:hover, .bildEth:hover, .bildAmy:hover{
     transition: 0.5s ease;
     transform: scale(1.10);
     border: 5px solid white;
 } 
 
-.textHil, .textBar, .textFan, .textCla, .textEth, .textAmy{
+.textHil, .textBar, .textFan, .textSch, .textEth, .textAmy{
     font-size: 25px;
     place-self: center;
     font-weight: bold;
@@ -736,40 +747,44 @@ html, body{
 
 
 .bildHil{
-    background-image: url('./img/hay.png');
+    background-image: url('img/Hildegard.png');
     background-position:  center;
 }
 
 .bildBar{
-    background-image: url('./img/wof.png');
+    background-image: url('img/Strozzi.png');
 }
 .bildFan{
-    background-image: url('./img/bet.png');
+    background-image: url('img/Mendelssohn.png');
     background-position: 40% center;
 }
-.bildCla{
-    background-image: url('./img/gluck.png');
+.bildSch{
+    background-image: url('img/Schumann.png');
     background-position: 70% center;
 }
 .bildEth{
-    background-image: url('./img/muz.png');
+    background-image: url('img/Smyth.png');
     background-position: 50% center;
 }
 .bildAmy{
-    background-image: url('./img/mar.png');
+    background-image: url('img/Beach.png');
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.background-kvinna { /*background for kvinna*/
+    --s: 50px;
+    --c: #114379;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%,#2a90fd 68% 70%,#0000 72%;
+    background: 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+        repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+        radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+    background-attachment: fixed;
+}
 
 .background-wien { /*background for barrock*/
     --s: 50px;
@@ -860,7 +875,7 @@ html, body{
   .navbar-kvinna{
     display: flex;
     flex-direction: column;
-    background-color: rgb(121, 16, 121);
+    background-color: #2a90fd;
     padding: 10px;
   }
   

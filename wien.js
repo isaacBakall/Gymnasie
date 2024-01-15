@@ -1,6 +1,5 @@
 //function toggle person
 function togglePerson(textPerson, mp3Person, soundPerson) {
-
     if (textPerson.style.display === 'none') {
         textPerson.style.display = 'block';
         mp3Person.style.display = 'flex';
@@ -18,22 +17,37 @@ function togglePerson(textPerson, mp3Person, soundPerson) {
             element.style.display = 'none';
         }
     });
-};
+}
 
 //function toggle play
 function togglePlay(mp3Person, playPauseIconPerson) {
     if (!mp3Person.paused) {
         mp3Person.pause();
-        
         playPauseIconPerson.src = 'img/start.png';
     } else {
+        turnOff();
         mp3Person.play();
         playPauseIconPerson.src = 'img/pause.png';
     }
 }
 
-           
-           
+//function turnOff
+function turnOff() {
+    audioChr.pause();
+    audioHay.pause();
+    audioMuz.pause();
+    audioWof.pause();
+    audioMar.pause();
+    audioLud.pause();
+
+    playPauseIconChr.src = 'img/start.png';
+    playPauseIconHay.src = 'img/start.png';
+    playPauseIconMuz.src = 'img/start.png';
+    playPauseIconWof.src = 'img/start.png';
+    playPauseIconMar.src = 'img/start.png';
+    playPauseIconLud.src = 'img/start.png';
+}
+
 // Code for Christoph Willibald von Gluck
 let audioChr = new Audio('./sound/Orfeo.mp3');
 let isPlayingChr = false;
@@ -46,7 +60,6 @@ function togglePlayChr() {
 
 document.getElementById('bildChrButton').addEventListener('click', function () {
     var textChr = document.querySelector('.textChr');
-
     togglePerson(textChr, mp3ButtonChr, '.soundChr');
 });
 
@@ -62,7 +75,6 @@ function togglePlayHay() {
 
 document.getElementById('bildHayButton').addEventListener('click', function () {
     var textHay = document.querySelector('.textHay');
-
     togglePerson(textHay, mp3ButtonHay, '.soundHay');
 });
 
@@ -78,7 +90,6 @@ function togglePlayMuz() {
 
 document.getElementById('bildMuzButton').addEventListener('click', function () {
     var textMuz = document.querySelector('.textMuz');
-
     togglePerson(textMuz, mp3ButtonMuz, '.soundMuz');
 });
 
@@ -94,10 +105,8 @@ function togglePlayWof() {
 
 document.getElementById('bildWofButton').addEventListener('click', function () {
     var textWof = document.querySelector('.textWof');
-
     togglePerson(textWof, mp3ButtonWof, '.soundWof');
 });
-
 
 // Code for Joseph Martin Kraus
 let audioMar = new Audio('./sound/fishermen.mp3');
@@ -111,7 +120,6 @@ function togglePlayMar() {
 
 document.getElementById('bildMarButton').addEventListener('click', function () {
     var textMar = document.querySelector('.textMar');
-
     togglePerson(textMar, mp3ButtonMar, '.soundMar');
 });
 
@@ -127,6 +135,5 @@ function togglePlayLud() {
 
 document.getElementById('bildLudButton').addEventListener('click', function () {
     var textLud = document.querySelector('.textLud');
-
     togglePerson(textLud, mp3ButtonLud, '.soundLud');
 });

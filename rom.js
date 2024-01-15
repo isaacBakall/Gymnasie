@@ -24,16 +24,32 @@ function togglePerson(textPerson, mp3Person, soundPerson) {
 function togglePlay(mp3Person, playPauseIconPerson) {
     if (!mp3Person.paused) {
         mp3Person.pause();
-        
+
         playPauseIconPerson.src = 'img/start.png';
     } else {
+        turnOff();
         mp3Person.play();
         playPauseIconPerson.src = 'img/pause.png';
     }
 }
 
-           
-           
+// Function to turn off all audio elements
+function turnOff() {
+    audioFra.pause();
+    audioFre.pause();
+    audioCam.pause();
+    audioPjo.pause();
+    audioEdv.pause();
+    audioSer.pause();
+
+    playPauseIconFra.src = 'img/start.png';
+    playPauseIconFre.src = 'img/start.png';
+    playPauseIconCam.src = 'img/start.png';
+    playPauseIconPjo.src = 'img/start.png';
+    playPauseIconEdv.src = 'img/start.png';
+    playPauseIconSer.src = 'img/start.png';
+}
+
 // Code for Franz Schubert
 let audioFra = new Audio('./sound/Schubert - _Ständchen_ D957.mp3');
 let isPlayingFra = false;
@@ -97,7 +113,6 @@ document.getElementById('bildPjoButton').addEventListener('click', function () {
 
     togglePerson(textPjo, mp3ButtonPjo, '.soundPjo');
 });
-
 
 // Code for Edvard Grieg
 let audioEdv = new Audio('./sound/Grieg.mp3');

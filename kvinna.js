@@ -27,15 +27,32 @@ function togglePlay(mp3Person, playPauseIconPerson) {
         
         playPauseIconPerson.src = 'img/start.png';
     } else {
+        turnOff();
         mp3Person.play();
         playPauseIconPerson.src = 'img/pause.png';
     }
 }
 
+// Function to turn off all audio elements
+function turnOff() {
+    audioHil.pause();
+    audioBar.pause();
+    audioFan.pause();
+    audioSch.pause();
+    audioEth.pause();
+    audioAmy.pause();
+
+    playPauseIconHil.src = 'img/start.png';
+    playPauseIconBar.src = 'img/start.png';
+    playPauseIconFan.src = 'img/start.png';
+    playPauseIconSch.src = 'img/start.png';
+    playPauseIconEth.src = 'img/start.png';
+    playPauseIconAmy.src = 'img/start.png';
+}
            
            
 // Code for Hildegard av Bingen
-let audioHil = new Audio('./sound/Schubert - _Ständchen_ D957.mp3');
+let audioHil = new Audio('sound/Hildegard.mp3');
 let isPlayingHil = false;
 let playPauseIconHil = document.getElementById('playPauseIconHil');
 let mp3ButtonHil = document.getElementById('mp3ButtonHil');
@@ -51,7 +68,7 @@ document.getElementById('bildHilButton').addEventListener('click', function () {
 });
 
 // Code for Barbara Strozzi
-let audioBar = new Audio('./sound/Chopin - Ballade No.1 in G minor, Op.23 (Krystian Zimerman).mp3');
+let audioBar = new Audio('sound/Barbara.mp3');
 let isPlayingBar = false;
 let playPauseIconBar = document.getElementById('playPauseIconBar');
 let mp3ButtonBar = document.getElementById('mp3ButtonBar');
@@ -67,7 +84,7 @@ document.getElementById('bildBarButton').addEventListener('click', function () {
 });
 
 // Code for Fanny Mendelssohn
-let audioFan = new Audio('./sound/Fanille Saint-Saëns - Danse Macabre.mp3');
+let audioFan = new Audio('sound/Mendehlsson-Schwanenlied.mp3');
 let isPlayingFan = false;
 let playPauseIconFan = document.getElementById('playPauseIconFan');
 let mp3ButtonFan = document.getElementById('mp3ButtonFan');
@@ -83,24 +100,24 @@ document.getElementById('bildFanButton').addEventListener('click', function () {
 });
 
 // Code for Clara Schumann
-let audioCla = new Audio('./sound/Tchaikovsky - Swan Lake (Swan Theme).mp3');
-let isPlayingCla = false;
-let playPauseIconCla = document.getElementById('playPauseIconCla');
-let mp3ButtonCla = document.getElementById('mp3ButtonCla');
+let audioSch = new Audio('sound/Schumann.mp3');
+let isPlayingSch = false;
+let playPauseIconSch = document.getElementById('playPauseIconSch');
+let mp3ButtonSch = document.getElementById('mp3ButtonSch');
 
-function togglePlayCla() {
-    togglePlay(audioCla, playPauseIconCla);
+function togglePlaySch() {
+    togglePlay(audioCla, playPauseIconSch);
 }
 
-document.getElementById('bildClaButton').addEventListener('click', function () {
-    var textCla = document.querySelector('.textCla');
+document.getElementById('bildSchButton').addEventListener('click', function () {
+    var textSch = document.querySelector('.textSch');
 
-    togglePerson(textCla, mp3ButtonCla, '.soundCla');
+    togglePerson(textSch, mp3ButtonSch, '.soundSch');
 });
 
 
 // Code for Ethel Smyth
-let audioEth = new Audio('./sound/Grieg.mp3');
+let audioEth = new Audio('sound/Ethyl.mp3');
 let isPlayingEth = false;
 let playPauseIconEth = document.getElementById('playPauseIconEth');
 let mp3ButtonEth = document.getElementById('mp3ButtonEth');
@@ -116,7 +133,7 @@ document.getElementById('bildEthButton').addEventListener('click', function () {
 });
 
 // Code for Amy Beach
-let audioAmy = new Audio('./sound/Rachmaninoff_ Piano Concerto No. 1 in F-Sharp Minor, Op. 1 - I. Vivace.mp3');
+let audioAmy = new Audio('sound/Beach.mp3');
 let isPlayingAmy = false;
 let playPauseIconAmy = document.getElementById('playPauseIconAmy');
 let mp3ButtonAmy = document.getElementById('mp3ButtonAmy');

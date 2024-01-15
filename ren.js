@@ -27,11 +27,28 @@ function togglePlay(mp3Person, playPauseIconPerson) {
         
         playPauseIconPerson.src = 'img/start.png';
     } else {
+        turnOff();
         mp3Person.play();
         playPauseIconPerson.src = 'img/pause.png';
     }
 }
 
+// Function to turn off all audio elements
+function turnOff() {
+    audioJos.pause();
+    audioPal.pause();
+    audioTal.pause();
+    audioByr.pause();
+    audioDuf.pause();
+    audioLas.pause();
+
+    playPauseIconJos.src = 'img/start.png';
+    playPauseIconPal.src = 'img/start.png';
+    playPauseIconTal.src = 'img/start.png';
+    playPauseIconByr.src = 'img/start.png';
+    playPauseIconDuf.src = 'img/start.png';
+    playPauseIconLas.src = 'img/start.png';
+}
            
            
 // Code for Josquin Des Prez
