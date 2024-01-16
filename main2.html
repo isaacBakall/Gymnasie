@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>Document</title>
+</head>
+<body class="main">
+    <p>
+     <br><br><br>   
+    </p>
+    <div class="parent">
+    <a class="renässansen" href="Ren.html">
+        <img src="./img/nas.png" draggable="false" alt="Renaissance Image">
+    </a>
+    <a class="barocken" href="Bar.html">
+        <img src="./img/rem.png" draggable="false" alt="Barocken Image">
+    </a>
+    <a class="wienklassicismen" href="Wien.html">
+        <img src="./img/ludde.png" draggable="false" alt="Wienklassicismen Image">
+    </a>
+</div>
+
+    <div class="parent2">
+        <div class="renText">
+            <p>Renässansen</p>
+        </div>
+        <div class="barText">
+            <p>Barocken</p>
+        </div>
+        <div class ="wienText">
+            <p>Wienklassicismen</p>
+        </div>
+        <br><br><br><br>
+    </div>
+
+    <div class="parent3">
+        <div class="romantiken">
+            <a href="Rom.html">
+                <img src="./img/fly.png" draggable="false" alt="Romantiken Image">
+            </a>
+        </div>
+        <div class="modernismen">
+            <a href="Mod.html">
+                <img src="./img/sky.png" draggable="false" alt="Modernismen Image">
+            </a>
+        </div>
+        <div class="kvinnor">
+            <a href="kvinna.html">
+                <img src="./img/fanny.png" draggable="false" alt="Ing Image">
+            </a>
+        </div>
+    </div>
+    
+
+    <div class="parent4">
+        <div class="romText">
+            <p>Romantiken</p>
+        </div>
+        <div class="modText">
+            <p>Modernismen</p>
+        </div>
+        <div class ="kvinnorText">
+            <p>Kvinnors Rättigheter</p>
+        </div>
+    </div>
+
+    <script>
+        const imageElements = document.querySelectorAll('.renässansen, .barocken, .wienklassicismen, .romantiken, .modernismen, .kvinnor');
+        const textElements = document.querySelectorAll('.renText, .barText, .wienText, .romText, .modText, .kvinnorText');
+
+        imageElements.forEach((image, index) => {
+            image.addEventListener('mouseover', () => {
+                textElements[index].style.transition = '1s';
+                textElements[index].style.transform = 'scale(1.05)';
+            });
+
+            image.addEventListener('mouseout', () => {
+                textElements[index].style.transition = '0.5s';
+                textElements[index].style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>

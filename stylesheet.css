@@ -163,7 +163,7 @@ html, body{
     background-image: url('./img/las.png');
     background-position: 60% center;
 }
-/*-----------------------------------BARQUE-------------------------------------------------------------*/
+/*-----------------------------------BAROQUE-------------------------------------------------------------*/
 
  .JanPietersBild, .Johann_Pachelbel, .Vivaldibild, .BachBild, .GeorgHändelBild, .ArrangeloCorelliBild
 {
@@ -375,7 +375,21 @@ html, body{
 /*-------Barque---------*/
 
 /*------WIEN----------*/
-
+.background-wien { /*background for barrock*/
+    --s: 50px;
+    --c: #5e430d;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%,#48330a 68% 70%,#0000 72%;
+    background: 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+        repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+        radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+    background-attachment: fixed;
+}
 .ChristophWillibaldvonGluckBild, .JosephHaydnBild, .MuzioClementiBild, .WolfgangAmadeusMozartBild, .JosephMartinKrausBild, .LudvigVanBeethovenBild
 {
     display: grid;
@@ -684,6 +698,21 @@ html, body{
 
 
 /*------------------------------------------Kvinnliga kompositörer-----------------------------------*/
+.background-kvinna { /*background for kvinna*/
+    --s: 50px;
+    --c: #114379;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%,#2a90fd 68% 70%,#0000 72%;
+    background: 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+        repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+        radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+    background-attachment: fixed;
+}
 
 .HildegardavBingenBild, .BarbaraStrozziBild, .FannyMendelssohnBild, .ClaraSchumannBild, .EthelSmythBild, .AmyBeachBild
 {
@@ -694,27 +723,27 @@ html, body{
     z-index: 2;
 }
 
-.HildegardavBingenText, .FannyMendelssohnText, .EthelSmythBildText{
+.HildegardavBingenText, .FannyMendelssohnText, .EthelSmythText{
     display: grid;
     grid-template-columns: 100px 2fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 0;
 }
-.HildegardavBingenText{margin-top: -8rem;} 
-.FannyMendelssohnText{margin-top: -1rem;} 
-.EthelSmythBildText{margin-top: -0rem;}
-.BarbaraStrozziText{margin-top: -10rem;} 
-.ClaraSchumannText{} 
-.AmyBeachText{}
-
 .BarbaraStrozziText, .ClaraSchumannText, .AmyBeachText{
     display: grid;
     grid-template-columns: 1fr 2fr 100px;
     grid-template-rows: 1fr;
     grid-gap: 0;
     margin-top: -20rem;
-    
 }
+.HildegardavBingenText{margin-top: -5rem;} 
+.FannyMendelssohnText{margin-top: -8rem;} 
+.EthelSmythText{margin-top: -6rem;}
+.BarbaraStrozziText{margin-top: -10rem;} 
+.ClaraSchumannText{margin-top: -8rem;} 
+.AmyBeachText{margin-top: -11rem;}
+
+
 .bildHil, .bildBar, .bildFan, .bildSch, .bildEth, .bildAmy {
     background-size: cover;
     width: 15em;
@@ -768,38 +797,6 @@ html, body{
 }
 .bildAmy{
     background-image: url('img/Beach.png');
-}
-
-.background-kvinna { /*background for kvinna*/
-    --s: 50px;
-    --c: #114379;
-    --_s: calc(2*var(--s)) calc(2*var(--s));
-    --_g: 35.36% 35.36% at;
-    --_c: #0000 66%,#2a90fd 68% 70%,#0000 72%;
-    background: 
-        radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
-        radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
-        radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
-        radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
-        repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
-        radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
-    background-attachment: fixed;
-}
-
-.background-wien { /*background for barrock*/
-    --s: 50px;
-    --c: #5e430d;
-    --_s: calc(2*var(--s)) calc(2*var(--s));
-    --_g: 35.36% 35.36% at;
-    --_c: #0000 66%,#48330a 68% 70%,#0000 72%;
-    background: 
-        radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
-        radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
-        radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
-        radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
-        repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
-        radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
-    background-attachment: fixed;
 }
 /*----------WIEN-----------------*/
 /*------ROMANTIKEN----------*/
@@ -894,6 +891,7 @@ html, body{
     margin-top: -40px;
     font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
     font-weight: bold;
+    margin-right: 400px;
   }
 
   .navbar .top-left {
@@ -939,7 +937,7 @@ html, body{
 /*--------------NAVBAR------------------*/
 
 /*---------------MAIN-----------------*/
-
+/*
 .main {
     background-color: rgba(20,18,18,255);
 
@@ -1140,6 +1138,106 @@ html, body{
     text-align: center;
     line-height: 0;
 }
+*/
 
 
 
+/*---------------MAIN-----------------*/
+
+.main {
+    background-color: rgba(20, 18, 18, 255);
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    filter: grayscale(100%);
+}
+
+.item p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: rgb(239, 187, 92);
+    font-weight: bold;
+    background-color: rgba(30, 28, 28, 0.628);
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    z-index: 1;
+}
+
+.item:hover img {
+    filter: grayscale(0%);
+    transition: 1000ms;
+}
+
+.item:hover {
+    transition: 1s;
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+
+.item.renässansen:hover {
+    box-shadow: 0 0 10px 5px rgba(119, 255, 0, 0.5);
+}
+
+.item.barocken:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 247, 255, 0.5);
+}
+
+.item.wienklassicismen:hover {
+    box-shadow: 0 0 10px 5px rgba(251, 233, 33, 0.5);
+}
+
+.item.romantiken:hover {
+    box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
+}
+
+.item.modernismen:hover {
+    box-shadow: 0 0 10px 5px rgba(167, 120, 2, 0.5);
+}
+
+.item.kvinnor:hover {
+    box-shadow: 0 0 10px 5px rgba(173, 216, 230, 0.5);
+}
+
+/*---------------NAVBAR-----------------*/
+
+.navbar-main {
+    background-color: rgba(20, 18, 18, 255);
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar-main h1 {
+    color: rgb(239, 187, 92);
+    font-size: 100px;
+    margin: 0;
+    font-weight: bold;
+}

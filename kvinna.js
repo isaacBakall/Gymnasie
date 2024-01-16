@@ -106,7 +106,7 @@ let playPauseIconSch = document.getElementById('playPauseIconSch');
 let mp3ButtonSch = document.getElementById('mp3ButtonSch');
 
 function togglePlaySch() {
-    togglePlay(audioCla, playPauseIconSch);
+    togglePlay(audioSch, playPauseIconSch);
 }
 
 document.getElementById('bildSchButton').addEventListener('click', function () {

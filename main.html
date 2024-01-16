@@ -7,78 +7,48 @@
     <title>Document</title>
 </head>
 <body class="main">
-    <p>
-     <br><br><br>   
-    </p>
-    <div class="parent">
-    <a class="renässansen" href="Ren.html">
-        <img src="./img/nas.png" draggable="false" alt="Renaissance Image">
-    </a>
-    <a class="barocken" href="Bar.html">
-        <img src="./img/rem.png" draggable="false" alt="Barocken Image">
-    </a>
-    <a class="wienklassicismen" href="Wien.html">
-        <img src="./img/ludde.png" draggable="false" alt="Wienklassicismen Image">
-    </a>
-</div>
-
-    <div class="parent2">
-        <div class="renText">
+    <div class="navbar-main">
+        <h1>Musik Epoker</h1>
+    </div>
+    <div class="grid-container">
+        <a class="item renässansen" href="Ren.html">
+            <img src="./img/nas.png" draggable="false" alt="Renaissance Image">
             <p>Renässansen</p>
-        </div>
-        <div class="barText">
+        </a>
+        <a class="item barocken" href="Bar.html">
+            <img src="./img/rem.png" draggable="false" alt="Barocken Image">
             <p>Barocken</p>
-        </div>
-        <div class ="wienText">
+        </a>
+        <a class="item wienklassicismen" href="Wien.html">
+            <img src="./img/ludde.png" draggable="false" alt="Wienklassicismen Image">
             <p>Wienklassicismen</p>
-        </div>
-        <br><br><br><br>
-    </div>
-
-    <div class="parent3">
-        <div class="romantiken">
-            <a href="Rom.html">
-                <img src="./img/fly.png" draggable="false" alt="Romantiken Image">
-            </a>
-        </div>
-        <div class="modernismen">
-            <a href="Mod.html">
-                <img src="./img/sky.png" draggable="false" alt="Modernismen Image">
-            </a>
-        </div>
-        <div class="kvinnor">
-            <a href="kvinna.html">
-                <img src="./img/fanny.png" draggable="false" alt="Ing Image">
-            </a>
-        </div>
-    </div>
-    
-
-    <div class="parent4">
-        <div class="romText">
+        </a>
+        <a class="item romantiken" href="Rom.html">
+            <img src="./img/fly.png" draggable="false" alt="Romantiken Image">
             <p>Romantiken</p>
-        </div>
-        <div class="modText">
+        </a>
+        <a class="item modernismen" href="Mod.html">
+            <img src="./img/sky.png" draggable="false" alt="Modernismen Image">
             <p>Modernismen</p>
-        </div>
-        <div class ="kvinnorText">
-            <p>Kvinnors Rättigheter</p>
-        </div>
+        </a>
+        <a class="item kvinnor" href="kvinna.html">
+            <img src="./img/fanny.png" draggable="false" alt="Ing Image">
+            <p>Ojämställdhet</p>
+        </a>
     </div>
 
     <script>
-        const imageElements = document.querySelectorAll('.renässansen, .barocken, .wienklassicismen, .romantiken, .modernismen, .kvinnor');
-        const textElements = document.querySelectorAll('.renText, .barText, .wienText, .romText, .modText, .kvinnorText');
+        const items = document.querySelectorAll('.item');
 
-        imageElements.forEach((image, index) => {
-            image.addEventListener('mouseover', () => {
-                textElements[index].style.transition = '1s';
-                textElements[index].style.transform = 'scale(1.05)';
+        items.forEach((item) => {
+            item.addEventListener('mouseover', () => {
+                item.style.transition = '1s';
+                item.style.transform = 'scale(1.05)';
             });
 
-            image.addEventListener('mouseout', () => {
-                textElements[index].style.transition = '0.5s';
-                textElements[index].style.transform = 'scale(1)';
+            item.addEventListener('mouseout', () => {
+                item.style.transition = '0.5s';
+                item.style.transform = 'scale(1)';
             });
         });
     </script>
