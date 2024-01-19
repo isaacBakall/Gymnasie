@@ -141,6 +141,7 @@ html, body{
 
 .bildJos{
     background-image: url('./img/Josquin.png');
+    background-position: 60% center;
 }
 
 .bildPal{
@@ -837,12 +838,34 @@ html, body{
 }
 
 /*--------------NAVBAR------------------*/
-.navbar {
-    display: flex;
-    flex-direction: column;
-    background-color: #1b6a00;
-    padding: 10px;
-  }
+@media only screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        background-color: #1b6a00;
+        padding: 10px;
+      }
+
+      .navbar p, .navbar-bar p, .navbar-wien p, .navbar-rom p, .navbar-mod p  {
+        margin: 0;
+        color: black;
+        font-size: 150px;
+        margin-top: -40px;
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+        font-weight: bold;
+      }
+      .navbar-kvinna p{
+        margin: 0;
+        color: black;
+        font-size: 140px;
+        margin-top: -40px;
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+        font-weight: bold;
+        margin-right: 400px;
+      }
+
+      
+
   .navbar-rom {
     display: flex;
     flex-direction: column;
@@ -876,23 +899,7 @@ html, body{
     padding: 10px;
   }
   
-  .navbar p, .navbar-bar p, .navbar-wien p, .navbar-rom p, .navbar-mod p  {
-    margin: 0;
-    color: black;
-    font-size: 150px;
-    margin-top: -40px;
-    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-    font-weight: bold;
-  }
-  .navbar-kvinna p{
-    margin: 0;
-    color: black;
-    font-size: 140px;
-    margin-top: -40px;
-    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-    font-weight: bold;
-    margin-right: 400px;
-  }
+
 
   .navbar .top-left {
     order: -1;
@@ -934,211 +941,155 @@ html, body{
     filter:invert(1);
 }
 
-/*--------------NAVBAR------------------*/
-
-/*---------------MAIN-----------------*/
-/*
-.main {
-    background-color: rgba(20,18,18,255);
-
+.image-carousel, .images, .prev, .next .images img{
+    display: none;
 }
+}
+@media only screen and (max-width: 767px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        padding: 10px;
+      }
 
-
-
-.parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 2rem;
-    grid-row-gap: 0px;
+    .navbar p{
+        margin: 0;
+        color: rgb(210, 52, 52);
+        font-size: 65px;
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+        font-weight: bold;
+        text-align: center;
+      }
+      .logo{
+        display: none;
     }
-
-
-
-
-
-
+    .arrow{
+        width: 100px;
+        border-radius: 50%;
+        filter:invert(1);
+        display: none;
+    }
+    .arrowRight{
+        transform: rotate(180deg);
+        width: 100px;
+        border-radius: 50%;
+        filter:invert(1);
+        display: none;
+    }
+    .leftColumn,.rightColumn, .timeline{
+        display: none;
+    }
     
-.renässansen { 
-    grid-area: 1 / 2 / 2 / 3; 
-    position: relative;
-    overflow: hidden;}
-.renässansen img, .barocken img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-    filter: grayscale(100%);
-    object-position: center 18%;
-}
-.romantiken img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;  
-    filter: grayscale(100%);
-}
-.modernismen img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-    object-position: center 12%;
-    filter: grayscale(100%);
-}
-.wienklassicismen img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-    object-position: 2% 10%;
-    filter: grayscale(100%);    
-
-}
-.kvinnor img{
-    filter: grayscale(100%);
-}
-
-.kvinnor img:hover,.wienklassicismen img:hover, .modernismen img:hover, .romantiken img:hover,.renässansen img:hover, .barocken img:hover {
-    filter: grayscale(0%);
-    transition: 1000ms;
-}
-
-
-
-.barocken { grid-area: 1 / 3 / 2 / 4; }
-.wienklassicismen { grid-area: 1 / 4 / 2 / 5; }
-
-.parent2 {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 2rem;
-    grid-row-gap: 0px;
+    .image-carousel {
+        position: relative;
+        max-width: 600px; /* Set your preferred maximum width */
+        margin: 20px auto;
+        overflow: hidden;
     }
-.renText, .barText, .wienText, .romText, .modText, .kvinnorText{
-    background-color: rgba(30, 28, 28, 0.628);
-    color: rgb(239, 187, 92);
-    font-weight: bold;
-    margin-top: -200px;
-    z-index: 1;
-    pointer-events: none;
-} 
-.renText { 
-    grid-area: 1 / 2 / 2 / 3; 
-}
-.barText { 
-    grid-area: 1 / 3 / 2 / 4; 
-}
-.wienText { 
-    grid-area: 1 / 4 / 2 / 5; 
-}
-
-
-
-.parent3 {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 2rem;
-    grid-row-gap: 0px;
-    }
-
-.romantiken { grid-area: 1 / 2 / 2 / 3; }
-.modernismen { grid-area: 1 / 3 / 2 / 4; }
-.kvinnor { grid-area: 1 / 4 / 2 / 5; }
-
-
-.parent4 {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 2rem;
-    grid-row-gap: 0px;
-    }
-
-.romText { 
-    grid-area: 1 / 2 / 2 / 3;}
-.modText { 
-    grid-area: 1 / 3 / 2 / 4;}
-.kvinnorText { 
-    grid-area: 1 / 4 / 2 / 5;
-}
-
-
-
-
-
-.renässansen,.barocken, .wienklassicismen, .romantiken, .modernismen, .kvinnor { 
-  width: 500px;
-  height: 300px;
-  border-radius: 15px;
-  cursor: pointer;
     
-  
+    .images {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        margin-left: 5%;
+    }
+    
+    .image {
+        position: relative;
+        flex: 0 0 15em; /* Each image takes up the specified width */
+        height: 15em;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top right;
+        cursor: pointer;
+        border-radius: 50%; /* Make the image container circular */
+        box-sizing: border-box;
+        margin-top: 5%;
+        overflow: hidden;
+    }
+    
+    .image1 {
+        margin-left: 20%;
+        background-position: 70% center;
+    }
+    
+    .image2 {
+        margin-left: 40%;
+        background-position: 60% center;
+    }
+    
+    .image3 {
+        margin-left: 38%;
+        background-position: 70% center;
+    }
+    
+    .image4 {
+        margin-left: 39%;
+        background-position: 60% center;
+    }
+    
+    .image5 {
+        margin-left: 39%;
+        background-position: 60% center;
+    }
+    
+    .image6 {
+        margin-left: 39%;
+        background-position: 60% center;
+    }
+    
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .prev {
+        left: 10px;
+    }
+    
+    .next {
+        right: 10px;
+    }
+    
+    .image-text {
+        position: absolute;
+        bottom: 5%; /* Adjusted for lower positioning */
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    
+    /* Additional class for individual image texts */
+    .image1 .image-text {
+        display: none;
+    }
+    
+    .image1:hover .image-text,
+    .image2:hover .image-text,
+    .image3:hover .image-text,
+    .image4:hover .image-text,
+    .image5:hover .image-text,
+    .image6:hover .image-text {
+        display: block;
+    }
+    
+    
+    
+    
+    
+    
 }
 
-.renässansen:hover,
-.barocken:hover,
-.wienklassicismen:hover,
-.romantiken:hover,
-.modernismen:hover {
-  transition: 1s;
-  border-radius: 10px;
-  transform: scale(1.05);
-  
-}
-.renässansen:hover{
-    box-shadow: 0 0 10px 5px rgba(119, 255, 0, 0.5);
-}
-.barocken:hover{
-    box-shadow: 0 0 10px 5px rgba(0, 247, 255, 0.5);
-}
-.wienklassicismen:hover{
-    box-shadow: 0 0 10px 5px rgba(251, 233, 33, 0.5);
-}
-.romantiken:hover{
-    box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
-}
-.modernismen:hover{
-    box-shadow: 0 0 10px 5px rgba(167, 120, 2, 0.5);
-}
 
-
-
-.renText, .barText, .wienText, .romText, .modText, .kvinnorText {
-    width: 500px;
-    height: 100px;
-    font-size: 50px;
-    text-align: center;
-    line-height: 0;
-}
-
-
-
-.kvinnor img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-    object-position: center 2%;
-}
-
-.kvinnor:hover {
-    transition: 1s;
-    box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
-    border-radius: 10px;
-    transform: scale(1.05);
-}
-
-.kvinnorText {
-    width: 500px;
-    height: 100px;
-    font-size: 50px;
-    text-align: center;
-    line-height: 0;
-}
-*/
 
 
 
@@ -1241,3 +1192,5 @@ html, body{
     margin: 0;
     font-weight: bold;
 }
+
+
