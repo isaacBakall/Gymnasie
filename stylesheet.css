@@ -952,6 +952,8 @@ html, body{
         background-color: transparent;
         padding: 10px;
       }
+    .br{display: none;
+       }
 
     .navbar p{
         margin: 0;
@@ -980,110 +982,150 @@ html, body{
     .leftColumn,.rightColumn, .timeline{
         display: none;
     }
-    
-    .image-carousel {
-        position: relative;
-        max-width: 600px; /* Set your preferred maximum width */
-        margin: 20px auto;
-        overflow: hidden;
+    #mp3ButtonTal{
+        display: block;
     }
     
-    .images {
+    .image-carousel{
+        height: 600px;
+        margin: 0;
+        display: grid;
+        grid-template-rows: 500px 100px;
+        grid-template-columns: 1fr 30px 30px 30px 30px 30px 30px 1fr;
+        align-items: center;
+        justify-items: center;
+      }
+      
+      main#carousel {
+        grid-row: 1 / 2;
+        grid-column: 1 / 9;
+        width: 100vw;
+        height: 500px;
         display: flex;
-        transition: transform 0.5s ease-in-out;
-        margin-left: 5%;
-    }
-    
-    .image {
-        position: relative;
-        flex: 0 0 15em; /* Each image takes up the specified width */
-        height: 15em;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        transform-style: preserve-3d;
+        perspective: 600px;
+        --items: 5;
+        --middle: 3;
+        --position: 1;
+        pointer-events: none;
+      }
+      
+      div.item {
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        background-color: coral;
+        --r: calc(var(--position) - var(--offset));
+        --abs: max(calc(var(--r) * -1), var(--r));
+        transition: all 0.25s linear;
+        transform: rotateY(calc(-10deg * var(--r)))
+          translateX(calc(-300px * var(--r)));
+        z-index: calc((var(--position) - var(--abs)));
+
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center top right;
         cursor: pointer;
-        border-radius: 50%; /* Make the image container circular */
         box-sizing: border-box;
-        margin-top: 5%;
         overflow: hidden;
-    }
+      }
+     
+
+      
+      div.item:nth-of-type(1) {
+        --offset: 1;
+        background-color: rgb(112, 255, 141);
+        background-image: url('./img/duf.png');
+        background-position: center 60%;
+        z-index: 2;
+      }
+     
+      div.item:nth-of-type(2) {
+        --offset: 2;
+        background-color: #ff70a6;
+        background-image: url('./img/Josquin.png');
+        background-position: center 60%;
+      }
+      div.item:nth-of-type(3) {
+        --offset: 3;
+        background-color: #ff9770;
+        background-image: url('./img/Thomas_Tallis.png');
+        background-position: center 70%;
+      }
+      div.item:nth-of-type(4) {
+        --offset: 4;
+        background-color: #ffd670;
+        background-image: url('./img/Pal.png');
+        background-position: center 60%;
+      }
+      div.item:nth-of-type(5) {
+        --offset: 5;
+        background-color: #e9ff70;
+        background-image: url('./img/las.png');
+        background-position: center 60%;
+      }
+      div.item:nth-of-type(6) {
+        --offset: 6;
+        background-color: #91ff70;
+        background-image: url('./img/Byrd.png');
+        background-position: center 60%;
+      }
+
     
-    .image1 {
-        margin-left: 20%;
-        background-position: 70% center;
-    }
-    
-    .image2 {
-        margin-left: 40%;
-        background-position: 60% center;
-    }
-    
-    .image3 {
-        margin-left: 38%;
-        background-position: 70% center;
-    }
-    
-    .image4 {
-        margin-left: 39%;
-        background-position: 60% center;
-    }
-    
-    .image5 {
-        margin-left: 39%;
-        background-position: 60% center;
-    }
-    
-    .image6 {
-        margin-left: 39%;
-        background-position: 60% center;
-    }
-    
-    .prev,
-    .next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: #333;
-        color: #fff;
-        padding: 10px 15px;
-        border: none;
-        cursor: pointer;
-    }
-    
-    .prev {
-        left: 10px;
-    }
-    
-    .next {
-        right: 10px;
-    }
-    
-    .image-text {
-        position: absolute;
-        bottom: 5%; /* Adjusted for lower positioning */
-        left: 50%;
-        transform: translateX(-50%);
-        color: #fff;
-        font-size: 1.2em;
-        text-align: center;
-    }
-    
-    /* Additional class for individual image texts */
-    .image1 .image-text {
-        display: none;
-    }
-    
-    .image1:hover .image-text,
-    .image2:hover .image-text,
-    .image3:hover .image-text,
-    .image4:hover .image-text,
-    .image5:hover .image-text,
-    .image6:hover .image-text {
-        display: block;
-    }
+      
+      input:nth-of-type(1) {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+      input:nth-of-type(1):checked ~ main#carousel {
+        --position: 1;
+      }
+      
+      input:nth-of-type(2) {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+      }
+      input:nth-of-type(2):checked ~ main#carousel {
+        --position: 2;
+      }
+      
+      input:nth-of-type(3) {
+        grid-column: 4 /5;
+        grid-row: 2 / 3;
+      }
+      input:nth-of-type(3):checked ~ main#carousel {
+        --position: 3;
+      }
+      
+      input:nth-of-type(4) {
+        grid-column: 5 / 6;
+        grid-row: 2 / 3;
+      }
+      input:nth-of-type(4):checked ~ main#carousel {
+        --position: 4;
+      }
+      
+      input:nth-of-type(5) {
+        grid-column: 6 / 7;
+        grid-row: 2 / 3;
+      }
+      input:nth-of-type(5):checked ~ main#carousel {
+        --position: 5;
+      }
+      input:nth-of-type(6) {
+        grid-column: 7 / 8;
+        grid-row: 2 / 3;
+      }
+      input:nth-of-type(6):checked ~ main#carousel {
+        --position: 6;
+      }
+      
     
     
-    
+   
     
     
     

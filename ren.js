@@ -149,29 +149,18 @@ document.getElementById('bildLasButton').addEventListener('click', function () {
 });
 
 
+    var currentAudio;
 
+    function playMusic(song) {
+      // Pause the current audio (if any)
+      if (currentAudio) {
+        currentAudio.pause();
+      }
 
-document.addEventListener('DOMContentLoaded', function () {
-    const imagesContainer = document.querySelector('.images');
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
-    let currentIndex = 0;
+      // Create a new audio object and play the specified song
+      var audio = new Audio(song);
+      audio.play();
 
-    function showImage(index) {
-        const translateValue = -index * 100 + '%';
-        imagesContainer.style.transform = 'translateX(' + translateValue + ')';
+      // Update the current audio variable
+      currentAudio = audio;
     }
-
-    function handlePrevClick() {
-        currentIndex = (currentIndex - 1 + 6) % 6;
-        showImage(currentIndex);
-    }
-
-    function handleNextClick() {
-        currentIndex = (currentIndex + 1) % 6;
-        showImage(currentIndex);
-    }
-
-    prevButton.addEventListener('click', handlePrevClick);
-    nextButton.addEventListener('click', handleNextClick);
-});
